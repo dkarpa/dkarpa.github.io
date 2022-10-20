@@ -4,10 +4,16 @@ title: "Projects"
 permalink: /projects/
 author_profile: true
 ---
-header1
----
-text1
----
-header2
----
-text2
+Innovation in AI
+======
+* abc
+
+Chilling Effects of Digital Surveillance
+======
+* dfg
+
+
+Digital Governance Solutions
+======
+* hij
+
