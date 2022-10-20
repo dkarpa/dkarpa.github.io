@@ -7,5 +7,3 @@ venue: "University of Bremen"
 date: 2017-01-01
 location: "Bremen, Germany"
 ---
-
-Worked with students and helped them to get the content of the lectures.
