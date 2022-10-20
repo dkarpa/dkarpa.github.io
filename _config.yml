@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "David Karpa"
+title                    : "About"
 title_separator          : "-"
 name                     : &name "David Karpa"
 description              : &description "personal description"
