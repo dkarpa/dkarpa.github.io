@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Economics, University of Bremen, 2018
+* M.S. in Professional Public Decision Making, University of Bremen, 2020
+* Ph.D in Institutional Economics, University of Bremen, 2024 (expected)
 
 Work experience
 ======
