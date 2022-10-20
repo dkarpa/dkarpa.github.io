@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/vilnius
 venue: "Vilnius University"
-date: 2022 
+date: 2022-01-01
 location: "Vilnius, Lithuania"
 ---
 
