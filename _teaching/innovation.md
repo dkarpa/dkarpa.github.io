@@ -1,5 +1,5 @@
 ---
-title: "Teaching assistance: 'Political Economy of Innovation'"
+title: "Political Economy of Innovation"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/innovation

@@ -1,5 +1,5 @@
 ---
-title: "Tutor for Microeconomics"
+title: "Microeconomics"
 collection: teaching
 type: "Undergraduate course"
 venue: "University of Bremen"

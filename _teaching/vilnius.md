@@ -1,5 +1,5 @@
 ---
-title: "Summer Academy"
+title: "Artificial Intelligence, Big Data and Political Regimes"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/vilnius
