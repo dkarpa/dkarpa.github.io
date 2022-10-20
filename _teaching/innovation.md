@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/innovation
 venue: "University of Bremen"
-date: 2022
+date: 2022-01-01
 location: "Bremen, Germany"
 ---
 
