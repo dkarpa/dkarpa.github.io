@@ -46,4 +46,3 @@ Teaching
 Service and leadership
 ======
 * Average scientist but fun to be around
-* Brilliant and modest
