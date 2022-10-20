@@ -10,4 +10,4 @@ citation: 'Lange, O.; Plath, J.; Dziggel, T.F.; Karpa, D.F.; Keil, M.; Becker, T
 ---
 [Download paper here](http://dkarpa.github.io/files/ijerph-19-07474.pdf)
 
-Recommended citation: Lange, O.; Plath, J.; Dziggel, T.F.; Karpa, D.F.; Keil, M.; Becker, T.; Rogowski, W.H. A Transparency Checklist for Carbon Footprint Calculations Applied within a Systematic Review of Virtual Care Interventions. Int. J. Environ. Res. Public Health 2022, 19, 7474. https://doi.org/10.3390/ijerph19127474 
+Lange, O.; Plath, J.; Dziggel, T.F.; Karpa, D.F.; Keil, M.; Becker, T.; Rogowski, W.H. A Transparency Checklist for Carbon Footprint Calculations Applied within a Systematic Review of Virtual Care Interventions. Int. J. Environ. Res. Public Health 2022, 19, 7474. https://doi.org/10.3390/ijerph19127474 

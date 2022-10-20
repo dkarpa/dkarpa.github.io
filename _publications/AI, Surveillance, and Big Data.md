@@ -9,3 +9,5 @@ paperurl: 'https://link.springer.com/chapter/10.1007/978-3-031-04063-4_8'
 citation: 'Karpa, D., Klarl, T., Rochlitz, M. (2022). Artificial Intelligence, Surveillance, and Big Data. In: Hornuf, L. (eds) Diginomics Research Perspectives. Advanced Studies in Diginomics and Digitalization. Springer, Cham. https://doi.org/10.1007/978-3-031-04063-4_8'
 ---
 [Download paper here](http://dkarpa.github.io/files/Karpa, Klarl, Rochlitz 2021 - Artificial Intelligence, Surveillance, and Big Data.pdf)
+
+Karpa, D., Klarl, T., Rochlitz, M. (2022). Artificial Intelligence, Surveillance, and Big Data. In: Hornuf, L. (eds) Diginomics Research Perspectives. Advanced Studies in Diginomics and Digitalization. Springer, Cham. https://doi.org/10.1007/978-3-031-04063-4_8
