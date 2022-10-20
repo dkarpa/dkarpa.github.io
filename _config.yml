@@ -80,11 +80,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Sidebar Name"
-  avatar           : "profile.png"
-  bio              : "Your biography for the left-hand sidebar"
+  name             : "David Karpa"
+  avatar           : "profile_pic.jpg"
+  bio              : "PhD-Cadidate, chair of institutional change, University of Bremen"
   location         : "Bremen, Germany"
-  employer         :
+  employer         : "https://www.uni-bremen.de/en/institutions/team/david-karpa-ma"
   pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=G24AjDUAAAAJ"
   email            :
