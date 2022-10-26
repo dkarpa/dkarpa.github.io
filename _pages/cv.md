@@ -25,11 +25,15 @@ Skills
 * R
   * Text mining & topic modelling
   * Econometrics
+* Methods
+  * Survey & Lab experiments
+  * Patent data analysis
+  * Econometric panel data analysis
 * Chess
   * Will learn to counter your favorite opening
   * Will put my rooks behind pawns in the endgame
 * Basketball
-  * Airballs from downtown but layups like Kyrie 
+  * Couldn't make a freethrow if my life dependent on it, but will snack 10 steals per game
 
 Publications
 ======
@@ -41,6 +45,3 @@ Teaching
 ======
 [See teaching](https://dkarpa.github.io/teaching/)
   
-Service and leadership
-======
-* Average scientist but fun to be around
