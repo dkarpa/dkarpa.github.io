@@ -2,24 +2,10 @@
 title: "Authoritarian Surveillance and Public Support for Digital Governance Solutions"
 collection: publications
 permalink: /publication/dgs
-excerpt: 'What factors determine support for digital governance solutions? And do autocracies
-differ from democracies in the way the population evaluates digitization initiatives
-by the state? Building on previous studies, we hypothesize that gaps in the quality of
-public services and information asymmetry between the government and the population
-increase support, while exposure to information about potential abuse of such tools by
-the state reduces support. We conducted a survey experiment with 2462 respondents
-in Russia and complemented it with four survey experiments of 1000 respondents each
-in Germany, Turkey, the United States and Estonia. We find strong and consistent
-evidence that knowledge about the potential misuse of digital governance solutions reduces
-support, irrespective of the type of political regime. Citizens who mostly rely
-on government-controlled information are more likely to support the introduction of
-digital governance tools. Contrary to previous studies, we do not find that gaps in the
-quality of public services increase support. Instead, respondents who are satisfied with
-the services provided by the state also seem to trust the government with introducing
-a digital governance solution.'
-date: 2023-01-01
-venue: 'Working Paper'
-paperurl: 'https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4454627'
-citation: 'Karpa, David F. and Rochlitz, Michael, Authoritarian Surveillance and Public Support for Digital Governance Solutions (May 21, 2023). Available at SSRN: https://ssrn.com/abstract_id=4454627'
+excerpt: 'This study investigates factors influencing support for digital governance solutions and compares this support between autocracies and democracies. We conduct survey experiments in Russia, Germany, Turkey, the United States, and Estonia, and find that awareness of potential misuse of digital governance tools by the government reduces support. Importantly, while this effect has previously been documented for China, we find it irrespective of regime type for an autocracy, a hybrid regime and three democracies. Individuals relying on government-controlled information sources are more likely to endorse digital governance tools. Our study challenges prior findings by indicating that gaps in public service quality do not boost support. Instead, satisfaction with government services correlates with trust in the government’s capacity to implement digital governance solutions.'
+date: 2024-11-13
+venue: 'Comparative Political Studies'
+paperurl: 'https://journals.sagepub.com/doi/10.1177/00104140241290208'
+citation: 'Karpa, D., & Rochlitz, M. (2024). Authoritarian Surveillance and Public Support for Digital Governance Solutions. Comparative Political Studies, 0(0). https://doi.org/10.1177/00104140241290208'
 ---
-[Download paper here](http://dkarpa.github.io/files/Karpa & Rochlitz 2023 - Authoritarian surveillance and public support for digital governance solutions.pdf)
+[Download paper here](http://dkarpa.github.io/files/karpa-rochlitz-2024-authoritarian-surveillance-and-public-support-for-digital-governance-solutions.pdf)
