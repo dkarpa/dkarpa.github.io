@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am an economist researching AI-powered surveillance and governance technologies and their deployment in contemporary societies. I am based at the University of Bremen and currently hold a PhD position at the Faculty of Economics.
+I am an economist researching <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">AI-powered surveillance and governance technologies</a> and their deployment in contemporary societies. I am based at the University of Bremen and currently hold a PhD position at the Faculty of Economics.
 
 My research focuses on the interplay between political and economic institutions and AI. More specifically, I am interested in the political economy of surveillance technology and how to explain the rise of contemporary surveillance states. I am also interested in the psychology of surveillance, i.e. how the ubiquitous collection and analysis of data affects human cognition and behavior. Ongoing projects can be found <a href="https://dkarpa.github.io/projects/">here</a>.
 
