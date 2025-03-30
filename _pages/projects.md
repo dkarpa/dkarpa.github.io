@@ -11,15 +11,13 @@ Authoritarian Surveillance, Innovation and Growth
 * <u><a href="https://dkarpa.github.io/files/Klarl%20et%20al%202023%20-%20Authoritarian%20Surveillance,%20Innovation%20and%20Growth.pdf">Working paper</a>.</u>
 
 
-Digital Surveillance and Self-censorship
+Assessing the interplay between repression and informational control in autocracies
 ======
-* How do authoritarian states maintain their hegemony over public opinion beyond state-run media and outright repression of journalists? 
+* How do authoritarian regimes maintain their hegemony over public opinion beyond state-run media and outright repression of journalists? 
 Theory and previous research suggest that surveillance practices discourage citizens from engaging in legitimate digital communication behaviors, such as expressing opinions online.
-Drawing on an original survey experiment conducted in Kazakhstan in November 2023 (N=5,025), this study is able to show that citizens exposed to a text-based surveillance treatment reduce their response rate to sensitive questions by 2.5% to 4%, while this effect is not triggered for non-sensitive questions. 
-By comparing subgroups, heterogeneous treatment effects are identified, showing that treatment effects are much larger (9%) or non-existent for certain groups.
-In particular, older citizens, those living in rural areas, those with a high intensity of internet use, and those consuming media from Russia are prone to self-censorship.
-By comparing indirect and direct questions within a list experiment, the baseline level of self-censorship is calculated by which allows to distinguish pre-existing self-censorship from treatment effects.
-This study contributes to the literature on digital authoritarianism by showing how state surveillance practices undermine political discourse on the Internet, which in turn contributes to authoritarian stability.
+Drawing on an original survey experiment conducted in Kazakhstan in November 2023 (N=5,025), this study is able to show that citizens exposed to a text-based surveillance treatment reduce their response rate to sensitive questions by an average 3.3\% while this effect is not triggered for non-sensitive questions. 
+Moreover, the measured self-censorship can be traced back to an informed elite that has access to a more diverse international media environment.
+This study contributes to the literature on digital authoritarianism by showing how state surveillance practices undermine political discourse which in turn contributes to authoritarian stability.
 * <u><a href="https://dkarpa.github.io/files/Surveillance_and_self_censorship.pdf">Conference paper</a>.</u>
 
 Effects of Russian language and media in Central-Asia
