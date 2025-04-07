@@ -7,8 +7,22 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am an applied economist researching the political economy of <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">AI-powered surveillance and governance technologies</a> and their deployment in contemporary societies. I am based at the University of Helsinki where I work in the ERC-funded project <a href="https://www.helsinki.fi/en/projects/algorithmic-governance">Algorithmic Governance - A Public Perspective (AGAPP)</a>. I received a PhD from the University of Bremen.
+Welcome! 
+I’m David Karpa, an applied economist specializing in the political economy of digital and automated governance technologies. 
+I’m currently a postdoctoral researcher at the University of Helsinki, where I contribute to the ERC-funded project <a href="https://www.helsinki.fi/en/projects/algorithmic-governance">Algorithmic Governance - A Public Perspective (AGAPP)</a>. 
+I completed my doctoral studies at the University of Bremen in 2024.
 
-My research focuses on the interplay between political and economic institutions and AI. More specifically, I am interested algorithmic governance and how these tools are developed, cognized and influence preferences and behavior. I focus on the micro-side of things and look at individual decision-making and behavior. Most of my work includes randomized controlled trials. Ongoing projects can be found <a href="https://dkarpa.github.io/projects/">here</a>.
+My work examines how political and economic institutions interact with technological development, specifically artificial intelligence and automation. 
+I focus on algorithmic governance -- how these technologies are developed, understood, and shape individual decision-making. 
+Using randomized controlled trials, I investigate the micro-level behaviors that drive these complex systems.
+My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> has been featured in Comparative Political Studies.
+<a href="https://dkarpa.github.io/projects/">Explore my current projects</a>.
 
-I mostly teach classes on institutional economics with a focus on AI, but I've also picked up teaching methods classes in R. Previous teaching experience can be found <a href="https://dkarpa.github.io/teaching/">here</a>.
+I primarily teach courses on political science and institutional economics with an emphasis on technological development, and I also offer applied methods classes in R.
+<a href="https://dkarpa.github.io/teaching/">Learn more about my teaching experience</a>.
+
+Feel free to reach out if you’d like to discuss my research or potential collaborations!
+
+
+
+
