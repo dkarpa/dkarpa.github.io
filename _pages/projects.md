@@ -17,13 +17,7 @@ This study contributes to the literature on digital authoritarianism by showing 
 Effects of Russian language and media in Central-Asia
 ======
 * With Andrey Tkachenko, Michael Rochlitz, Meruyert Tatkeyeva, and Galiya Sagyndykova
-* Does language affinity facilitate the export of propaganda by authoritarian regimes?
-Through which channels can propaganda be exported?
-And what are its effects?
-We study these questions with the help of six survey waves conducted in Kazakhstan between May 2021 and September 2023, as well as an original survey conducted in October 2023.
-We find that for surveys conducted after February 2022, Russian-speaking respondents were more likely to justify Russia's war in Ukraine, to negate Russian responsibility and to blame Western countries for the war, even after controlling for ethnicity, while before February 2022 no measurable difference between Russian-speaking and other respondents can be found. 
-We document that these shifts of opinion correspond to a significant increase in the consumption of Russian internet and social media content among Russian-speakers after February 2022, suggesting that this might be the channel through which Russian propaganda was effective. 
-Finally, we show how consumers of Russian propaganda are more likely to support the war and condone the circumvention of sanctions against Russia, and document that war-relevant exports to Russia increased disproportionately in those Kazakh regions where citizens were more likely to consume Russian propaganda and condone the war. 
+* Does language affinity facilitate the export of propaganda by authoritarian regimes? And what are the economic consequences of authoritarian propaganda abroad? We study these questions in the context of Kazakhstan with the help of multiple survey waves, online search statistics, our own original survey, and international trade data. We identify a shift towards pro-Russian opinions among the Russian-speaking population of Kazakhstan after Russia's full-scale invasion of Ukraine, even among ethnically non-Russian citizens. We relate this shift of opinion to a substantial increase in consumption of pro-Kremlin internet news and Russian social media content after February 2022. Using our own survey, we show that consumption of Russian propaganda increases the justification for circumvention of sanctions against Russia. Finally, using detailed trade data, we document that re-exports of sanctioned products to Russia increased disproportionately after February 2022 from regions where the population is more likely to be exposed to Russian propaganda. Our results shed light on mechanisms by which former colonial powers can continue to influence beliefs and economic behavior in their former colonies. 
 * <u><a href="https://dkarpa.github.io/files/Language_and_Political_Attitudes_in_the_Russian_World.pdf">Conference paper</a>.</u>
 
 
