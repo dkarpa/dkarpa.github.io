@@ -17,14 +17,16 @@ Education
 
 Work experience
 ======
-* 2018 - 2020: Research Assistant for the chair of innovation and structural change, Faculty of Business Studies and Economics
+* 2025 - ongoing Postdoctoral researcher at the Centre for Social Data Science, Faculty of Social Sciences, University of Helsinki
+* 2021 - 2024: Doctoral researcher at the chair of institutional econimics, Faculty of Business Studies and Economics, University of Bremen
+* 2018 - 2020: Research Assistant for the chair of innovation and structural change, Faculty of Business Studies and Economics, University of Bremen
 * Summer 2017: Teaching Assistant (Microeconomics)
 
 Skills
 ======
 * R
-  * Text mining & topic modelling
-  * Econometrics
+  * Quantitative econometrics
+  * Natural language processing
 * Methods
   * Survey & Lab experiments
   * Patent data analysis
