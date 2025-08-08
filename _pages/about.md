@@ -10,7 +10,7 @@ redirect_from:
 Welcome! 
 I’m David Karpa, an applied economist specializing in the political economy of digital and automated governance technologies. 
 I’m currently a postdoctoral researcher at the University of Helsinki, where I contribute to the ERC-funded project <a href="https://www.helsinki.fi/en/projects/algorithmic-governance">Algorithmic Governance - A Public Perspective (AGAPP)</a>. 
-I completed my doctoral studies at the University of Bremen in 2024.
+I completed my doctoral studies at the University of Bremen in 2024. In 2023, I was a visiting researcher at the <a href="https://ssh.nu.edu.kz/economics_about">Department of Economics at Nazarbayev University</a>. In 2024, I was an adjunct professor at <a href="https://www.kimep.kz/college-of-social-sciences/kz/">KIMEP University</a>.
 
 My work examines how political and economic institutions interact with technological development, specifically artificial intelligence and automation. 
 I focus on algorithmic governance -- how these technologies are developed, understood, and shape individual decision-making. 
