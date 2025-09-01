@@ -2,7 +2,7 @@
 title: "Applied Quantitative Research Project"
 collection: teaching
 type: "Graduate course"
-permalink: /teaching/socialdatascience_hel
+permalink: /teaching/socialdatasciencehelsinki
 venue: "University of Helsinki
 date: 2025-01-01
 location: "Helsinki, Finland"
