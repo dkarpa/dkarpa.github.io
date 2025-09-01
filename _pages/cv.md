@@ -13,11 +13,13 @@ Education
 ======
 * B.S. in Economics, University of Bremen, 2018
 * M.A. in Professional Public Decision Making, University of Bremen, 2020
-* Ph.D in Institutional Economics, University of Bremen, 2024 (expected)
+* Ph.D in Institutional Economics, University of Bremen, 2024
 
 Work experience
 ======
-* 2025 - ongoing Postdoctoral researcher at the Centre for Social Data Science, Faculty of Social Sciences, University of Helsinki
+
+* 2025 - ongoing: Postdoctoral researcher at the at TUM School of Social Sciences and Technology, Technical University of Munich
+* 2025 - 2025: Postdoctoral researcher at the Centre for Social Data Science, Faculty of Social Sciences, University of Helsinki
 * 2021 - 2024: Doctoral researcher at the chair of institutional econimics, Faculty of Business Studies and Economics, University of Bremen
 * 2018 - 2020: Research Assistant for the chair of innovation and structural change, Faculty of Business Studies and Economics, University of Bremen
 * Summer 2017: Teaching Assistant (Microeconomics)
@@ -27,6 +29,7 @@ Skills
 * R
   * Quantitative econometrics
   * Natural language processing
+  * Conjoint Experiment analysis
 * Methods
   * Survey & Lab experiments
   * Patent data analysis
