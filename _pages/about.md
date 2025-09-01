@@ -14,7 +14,7 @@ I completed my doctoral studies at the University of Bremen in 2024. In 2023, I 
 
 My work examines how political and economic institutions interact with technological development, specifically artificial intelligence and automation. 
 I focus on algorithmic governance -- how these technologies are developed, understood, and shape individual decision-making. 
-Using randomized controlled trials, I investigate the micro-level behaviors that drive these complex systems.
+Using randomized controlled trials, I investigate the micro-level attitudes, cognition, and behaviors.
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> has been featured in Comparative Political Studies.
 <a href="https://dkarpa.github.io/projects/">Explore my current projects</a>.
 
