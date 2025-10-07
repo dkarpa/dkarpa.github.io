@@ -9,10 +9,12 @@ redirect_from:
 ---
 <p>
 Welcome!
-I am an applied economist specializing in the political economy of digital and automated governance. 
+</p>
+<p>
+I'm David, an applied economist specializing in the political economy of digital and automated governance. 
 My research explores how political and economic institutions interact with technological change, 
 with a particular focus on artificial intelligence and automation. 
-I study algorithmic governance—especially how such systems are interpreted and understood by citizens. 
+I study algorithmic governance — especially how such systems are interpreted and understood by citizens. 
 Using mixed empirical methods, I analyze attitudes, cognition, and behavior at the micro level. 
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> 
 has been published in <em>Comparative Political Studies</em>.
