@@ -24,7 +24,7 @@ has been published in <em>Comparative Political Studies</em>.
 I am currently a postdoctoral researcher at the 
 <a href="https://www.sot.tum.de/en/sot/home/">TUM School of Social Sciences and Technology</a>, 
 Technical University of Munich, where I work in the ERC-funded project 
-<a href="https://www.helsinki.fi/en/projects/algorithmic-governance">
+<a href="https://cordis.europa.eu/project/id/101116772">
 Algorithmic Governance – A Public Perspective (AGAPP)
 </a>. 
 In 2025, I held a postdoctoral fellowship at the 

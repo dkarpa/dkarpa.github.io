@@ -11,42 +11,36 @@ redirect_from:
 
 Education
 ======
-* B.S. in Economics, University of Bremen, 2018
-* M.A. in Professional Public Decision Making, University of Bremen, 2020
-* Ph.D in Institutional Economics, University of Bremen, 2024
+* Ph.D. in Institutional Economics, University of Bremen, 2024  
+* M.A. in Professional Public Decision Making, University of Bremen, 2020  
+* B.S. in Economics, University of Bremen, 2018  
 
-Work experience
+Work Experience
 ======
-
-* 2025 - ongoing: Postdoctoral researcher at the at TUM School of Social Sciences and Technology, Technical University of Munich
-* 2025 - 2025: Postdoctoral researcher at the Centre for Social Data Science, Faculty of Social Sciences, University of Helsinki
-* 2021 - 2024: Doctoral researcher at the chair of institutional econimics, Faculty of Business Studies and Economics, University of Bremen
-* 2018 - 2020: Research Assistant for the chair of innovation and structural change, Faculty of Business Studies and Economics, University of Bremen
-* Summer 2017: Teaching Assistant (Microeconomics)
+* 2025 – present: Postdoctoral Researcher, TUM School of Social Sciences and Technology, Technical University of Munich  
+* 2025: Postdoctoral Researcher, Centre for Social Data Science, Faculty of Social Sciences, University of Helsinki  
+* 2021 – 2024: Doctoral Researcher, Chair of Institutional Economics, Faculty of Business Studies and Economics, University of Bremen  
+* 2018 – 2020: Research Assistant, Chair of Innovation and Structural Change, Faculty of Business Studies and Economics, University of Bremen  
+* Summer 2017: Teaching Assistant (Microeconomics), University of Bremen  
 
 Skills
 ======
-* R
-  * Quantitative econometrics
-  * Natural language processing
-  * Conjoint Experiment analysis
-* Methods
-  * Survey & Lab experiments
-  * Patent data analysis
-  * Econometric panel data analysis
-* Chess
-  * Will learn to counter your favorite opening
-  * Will put my rooks behind pawns in the endgame
-* Basketball
-  * Couldn't make a freethrow if my life dependent on it, but will snack 10 steals per game
+* **Quantitative and Experimental Methods**
+  * Survey and laboratory experiments  
+  * Conjoint experiment design and analysis  
+  * Econometric and panel data analysis  
+  * Patent and innovation data analysis  
+* **Programming and Data Analysis**
+  * R (data cleaning, statistical modeling, visualization)  
 
 Publications
 ======
-  <ul>{% for post in site.publications %}
+<ul>
+  {% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
+  {% endfor %}
+</ul>
+
 Teaching
 ======
 [See teaching](https://dkarpa.github.io/teaching/)
-  

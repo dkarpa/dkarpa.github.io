@@ -6,6 +6,6 @@ excerpt: 'This study investigates factors influencing support for digital govern
 date: 2024-11-13
 venue: 'Comparative Political Studies'
 paperurl: 'https://journals.sagepub.com/doi/10.1177/00104140241290208'
-citation: 'Karpa, D., & Rochlitz, M. (2024). Authoritarian Surveillance and Public Support for Digital Governance Solutions. Comparative Political Studies, 0(0). https://doi.org/10.1177/00104140241290208'
+citation: 'Karpa, D., & Rochlitz, M. (2024). Authoritarian Surveillance and Public Support for Digital Governance Solutions. Comparative Political Studies, 58(10). https://doi.org/10.1177/00104140241290208'
 ---
 [Download paper here](http://dkarpa.github.io/files/karpa-rochlitz-2024-authoritarian-surveillance-and-public-support-for-digital-governance-solutions.pdf)
