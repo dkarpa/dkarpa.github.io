@@ -25,13 +25,20 @@ Work Experience
 
 Skills
 ======
-* **Quantitative and Experimental Methods**
+* **Quantitative and Experimental Methods**  
   * Survey and laboratory experiments  
   * Conjoint experiment design and analysis  
   * Econometric and panel data analysis  
   * Patent and innovation data analysis  
-* **Programming and Data Analysis**
-  * R (data cleaning, statistical modeling, visualization)  
+
+* **Qualitative Methods**  
+  * Semi-structured interviews  
+  * Focus groups  
+  * Mixed-methods research design  
+  * Thematic and content analysis  
+
+* **Programming and Data Analysis**  
+  * R (data management, statistical modeling, visualization)  
 
 Publications
 ======
