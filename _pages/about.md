@@ -35,6 +35,8 @@ In 2024, I served as an adjunct professor at
 <a href="https://www.kimep.kz/college-of-social-sciences/kz/">
 KIMEP University
 </a> and completed my doctorate at the University of Bremen. 
+My dissertation received the <a href="https://www.uni-bremen.de/en/university/university-communication-and-marketing/all-news/details/bremen-thesis-award-presented-1">
+Bremen Thesis Award</a>.
 In 2023, I was a visiting researcher at the 
 <a href="https://ssh.nu.edu.kz/economics_about">
 Department of Economics at Nazarbayev University
