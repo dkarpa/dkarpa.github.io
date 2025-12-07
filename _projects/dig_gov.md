@@ -167,6 +167,10 @@ The clearest example involves residents of Kazakhstan’s two largest cities:
   </div>
 </div>
 
+It appears that corruption is such a big problem (remember the first Figure in the beginnning) that citizens are eager to give the state more power to tackle this. 
+
+More than that, they increase their support **even more** when the state is able to use repression, but **only** in conjunction with battling corruption.
+
 ### Key takeaways:
 
 - **Urban residents (Almaty & Astana)** show the **highest baseline support**.  
