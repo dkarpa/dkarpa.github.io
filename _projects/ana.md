@@ -41,18 +41,18 @@ The core experiment began with a simple default-setting manipulation. Respondent
 
 After this, respondents completed a **conjoint experiment** about automated border-control systems. Each system contained five attributes (e.g., data collected, human involvement, cost). In each task, respondents compared two systems, chose the one they preferred, and rated each system’s legitimacy. Each person completed three such tasks, giving six evaluations.
 
-<table>
+<table style="border: 2px solid #444; border-collapse: collapse; width: 100%;">
   <thead>
     <tr>
-      <th><strong>Attribute</strong></th>
-      <th><strong>Levels</strong></th>
+      <th style="border: 1px solid #444; padding: 8px;"><strong>Attribute</strong></th>
+      <th style="border: 1px solid #444; padding: 8px;"><strong>Levels</strong></th>
     </tr>
   </thead>
 
   <tbody>
     <tr>
-      <td><strong>1) Who makes entry decisions?</strong></td>
-      <td>
+      <td style="border: 1px solid #444; padding: 8px;"><strong>1) Who makes entry decisions?</strong></td>
+      <td style="border: 1px solid #444; padding: 8px;">
         1a) Computer makes decisions without human involvement.<br>
         1b) Computer recommends, but a human makes the final decision.<br>
         1c) Computer makes decisions, but border guards can change the decision.
@@ -60,8 +60,8 @@ After this, respondents completed a **conjoint experiment** about automated bord
     </tr>
 
     <tr>
-      <td><strong>2) How much do applicants pay?</strong></td>
-      <td>
+      <td style="border: 1px solid #444; padding: 8px;"><strong>2) How much do applicants pay?</strong></td>
+      <td style="border: 1px solid #444; padding: 8px;">
         2a) Free to use.<br>
         2b) Costs EUR 7 per application.<br>
         2c) Costs EUR 100 per application.
@@ -69,8 +69,8 @@ After this, respondents completed a **conjoint experiment** about automated bord
     </tr>
 
     <tr>
-      <td><strong>3) Which kind of personal data will be collected?</strong></td>
-      <td>
+      <td style="border: 1px solid #444; padding: 8px;"><strong>3) Which kind of personal data will be collected?</strong></td>
+      <td style="border: 1px solid #444; padding: 8px;">
         3a) Collects ID, fingerprint, and face data.<br>
         3b) Collects ID, fingerprint, face, and health self-assessment data.<br>
         3c) Collects ID only.
@@ -78,8 +78,8 @@ After this, respondents completed a **conjoint experiment** about automated bord
     </tr>
 
     <tr>
-      <td><strong>4) Who is responsible when the system makes a mistake?</strong></td>
-      <td>
+      <td style="border: 1px solid #444; padding: 8px;"><strong>4) Who is responsible when the system makes a mistake?</strong></td>
+      <td style="border: 1px solid #444; padding: 8px;">
         4a) The Finnish border guard (Rajavartiolaitos).<br>
         4b) Ministry of the Interior that developed the system.<br>
         4c) No one.
@@ -87,8 +87,8 @@ After this, respondents completed a **conjoint experiment** about automated bord
     </tr>
 
     <tr>
-      <td><strong>5) Is there a possibility to appeal?</strong></td>
-      <td>
+      <td style="border: 1px solid #444; padding: 8px;"><strong>5) Is there a possibility to appeal?</strong></td>
+      <td style="border: 1px solid #444; padding: 8px;">
         5a) Appeals allowed, with a decision in 24 hours.<br>
         5b) Appeals allowed, with a decision in one week.<br>
         5c) The decision is final and cannot be appealed.
@@ -96,6 +96,7 @@ After this, respondents completed a **conjoint experiment** about automated bord
     </tr>
   </tbody>
 </table>
+
 
 
 Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all information is attended to, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
