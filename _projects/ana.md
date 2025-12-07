@@ -190,7 +190,7 @@ Both %IncMSE and IncNodePurity measures show the same ranking.
 
 <div class="caption">
 Attribute-level VIMP reveals which *specific levels* respondents reacted to.  
-Weak accountability (“No one responsible”), full automation without human oversight, and high fees emerge as especially influential.
+Weak accountability ('No one responsible'), full automation without human oversight, and high fees emerge as especially influential.
 </div>
 
 ---
