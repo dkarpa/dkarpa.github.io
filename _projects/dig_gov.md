@@ -2,7 +2,7 @@
 layout: page
 title: Algorithmic Governance, Institutional Gaps, and Political Control in Central Asia
 description: Evidence from a 2025 national survey experiment in Kazakhstan on when citizens support—and even welcome—algorithmic governance tools.
-img: /assets/img/ags_kazakhstan.jpg
+img: /assets/img/surv.jpg
 importance: 1
 category: work
 related_publications: false
