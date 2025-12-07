@@ -2,7 +2,7 @@
 layout: page
 title: Behavioral Realism in Conjoint Experiments
 description: Attribute non-attendance, CRT-based diagnostics, and decision-tree approaches to understanding cognitive shortcuts in conjoint tasks.
-img: /assets/img/ana_cover.jpg
+img: /assets/img/ana_heatmap.jpg
 importance: 1
 category: work
 related_publications: false
@@ -14,10 +14,10 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/experiment_flow.jpg" title="Experiment structure" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/experiment flowchart paper.jpg" title="Experiment structure" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/partisanship_distribution.jpg" title="Distribution of partisanship" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/CB_partisanship_dist.jpg" title="Distribution of partisanship" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
@@ -30,10 +30,10 @@ To measure selective information use, I implement *conditional randomization tes
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ana_heatmap.jpg" title="Attribute non-attendance heatmap" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/ana.jpg" title="Attribute non-attendance heatmap" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ana_mentions.jpg" title="Mention probabilities in open-ended responses" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/ana_heatmap.jpg" title="Mention probabilities in open-ended responses" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 <div class="caption">
