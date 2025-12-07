@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Behavioral Realism in Conjoint Experiments
-description: Attribute non-attendance, CRT-based diagnostics, and decision-tree approaches to understanding cognitive shortcuts in conjoint tasks.
+description: Attribute non-attendance, CRT-based diagnostics, and tree-based approaches for understanding cognitive shortcuts in conjoint tasks.
 img: /assets/img/ana_heatmap.jpg
 importance: 1
 category: work
@@ -24,24 +24,91 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
   Overview of the experimental flow (left) and the distribution of political attitudes across respondents (right).
 </div>
 
-## Estimating Attribute Non-Attendance Using CRT-Conjoint
+---
 
-To measure selective information use, I implement *conditional randomization tests* (CRTs) using the **CRTConjoint** package. Unlike standard choice models, CRTs test whether an attribute had *any* effect on choices—additive, interactive, or heterogeneous—without assuming a specific functional form. This makes attribute non-attendance empirically detectable rather than assumed. Across partisan groups and system-outcome conditions, the analysis reveals systematic patterns: core institutional attributes (e.g., responsibility, human involvement) are attended to consistently, while others (cost, appeal rights, data collection) are strategically ignored depending on respondents’ ideological priors. Together with open-ended responses, these diagnostics illustrate how motivated reasoning shapes selective attention in complex choice tasks.
+## Experimental Setup
+
+We draw on a preregistered survey experiment fielded in October 2024 as part of the Citizen Barometer at the University of Helsinki  
+(<a href="https://aspredicted.org/48v2-9qk5.pdf" target="_blank">pre-registration</a>,  
+<a href="https://www.helsinki.fi/fi/projektit/kansalaisbarometri" target="_blank">project website</a>).  
+The sample consists of 2,040 Finnish adults, recruited to broadly match the national population. Respondents provided demographic background, attitudes toward automation, and their familiarity with automated border-control systems. Survey weights adjust the sample to reflect population benchmarks for region, language, age, gender, and education.
+
+Because the project focuses on the political conditions under which people trust or distrust automated decision-making, we also measured political orientations. Instead of traditional party identification, which is less informative in multiparty systems, we rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, we divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-8 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/CB_partisanship_dist.jpg" title="Distribution of partisanship" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+<div class="caption">
+  Distribution of partisan orientations in the sample, measured as the absolute difference in evaluations of Finland's most polarized parties.
+</div>
+
+The core experiment began with a simple default-setting manipulation. Respondents were randomly assigned to one of three conditions:
+
+- **Control** – no default mentioned  
+- **Accept** – the system defaults to accepting all asylum seekers  
+- **Reject** – the system defaults to rejecting all asylum seekers  
+
+After this, respondents completed a **conjoint experiment** about automated border-control systems. Each system contained five attributes (e.g., data collected, human involvement, cost). In each task, respondents compared two systems, chose the one they preferred, and rated each system’s legitimacy. Each person completed three such tasks, giving six evaluations.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-10 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/experimentflowchartpaper.jpg" title="Experiment Flow" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all attributes matter equally, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
+
+---
+
+## Estimating Attribute Non-Attendance with CRT-Conjoint
+
+To detect selective information use, we apply the **Conditional Randomization Test (CRT)** implemented in the  
+<a href="https://doi.org/10.1017/pan.2023.41" target="_blank"><strong>CRTConjoint</strong></a> package.
+
+Unlike traditional conjoint analyses, CRTs test a simple question:  
+**Did this attribute make *any* difference to respondents’ choices?**  
+
+The test does not assume additivity or linearity and captures any possible effect—interactive, nonlinear, or subgroup-specific. If the CRT rejects the null hypothesis, the attribute was *attended to*. If not, it was effectively *ignored*. Patterns across partisan groups and treatment arms reveal systematic motivated reasoning: people attend to attributes differently depending on whether the system's outcome aligns with their political priors.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ana.jpg" title="Attribute non-attendance heatmap" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/ana.jpg" title="Attribute non-attendance (CRT)" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/ana_heatmap.jpg" title="Mention probabilities in open-ended responses" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
+
 <div class="caption">
-  CRT-based attribute non-attendance across partisan groups (left) and predicted mention probabilities from open-ended responses (right).
+  CRT-based ANA across partisan groups (left) and predicted mention probabilities from open-ended responses (right).
 </div>
 
-## Extending Behavioral Realism with Tree-Based Models
+---
 
-Attribute non-attendance is an important step toward behavioral realism, but tree-based methods can further uncover heterogeneous processing strategies. Decision trees and model-based recursive partitioning, for example, allow us to recover latent decision rules, interaction structures, and subgroup-specific heuristics that are obscured in pooled AMCEs. These methods identify respondent segments that systematically prioritize certain attributes, ignore others, or engage in threshold-based reasoning. In the next stage of this project, I extend the behavioral-realist toolkit by integrating decision-tree diagnostics with CRT-based ANA measures, producing a multidimensional account of how people actually reason through conjoint tasks—particularly in politically polarized contexts.
+## Extending Behavioral Realism with Tree-Based Estimation
 
-More content on the decision-tree component will be added soon.
+CRTs tell us *whether* an attribute mattered—tree-based models help us understand *how*.  
+Using Bayesian Additive Regression Trees (BART) for conjoint experiments (`cjbart`), we estimate individual-level effects and compute **variable importance** by political group. This allows us to uncover hidden decision rules: nonlinearities, thresholds, and interactions that cannot be detected by AMCEs.
+
+What is especially noteworthy is that tree-based diagnostics strongly mirror the CRT results. Across methods, we see:
+
+- Consistent attention to institutional attributes (e.g., responsibility, human involvement)  
+- Selective ignoring of cost, appeal rights, and data collection among some partisan groups  
+- Parallel patterns across treatment arms  
+- Robustness across statistical principles (randomization tests, ensemble methods, Bayesian trees)  
+
+The next figure summarizes ANA across **three diagnostic procedures**—CRT, Random Forest MSE importance, and Random Forest node purity—illustrating how convergent the results are.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/ana_heatmap_three_tests_R1000.jpg" title="ANA by CRT, RF-MSE, and RF-Purity" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<div class="caption">
+  Attribute non-attendance across partisan groups using three estimation strategies. Despite relying on different statistical foundations, all methods converge on the same substantive conclusion: respondents selectively attend to information in ways aligned with their political motivations.
+</div>
+
+Together, CRT diagnostics and tree-based models provide a multidimensional picture of how people actually process conjoint tasks—often relying on shortcuts, ignoring information, and attending selectively when an attribute reinforces or challenges political attitudes. More content on the decision-tree component will be added soon.
