@@ -2,33 +2,65 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: ""
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<p>Welcome!</p>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<p>
+I'm David, an applied economist specializing in the political economy of digital and automated governance.
+My research explores how political and economic institutions interact with technological change,
+with a particular focus on artificial intelligence and automation.
+I study algorithmic governance — especially how such systems are interpreted and understood by citizens.
+Using mixed empirical methods, I analyze attitudes, cognition, and behavior at the micro level.
+My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a>  
+has been published in <em>Comparative Political Studies</em>.
+</p>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<p>
+I am currently a postdoctoral researcher at the
+<a href="https://www.sot.tum.de/en/sot/home/">TUM School of Social Sciences and Technology</a>,
+Technical University of Munich, where I work in the ERC-funded project
+<a href="https://cordis.europa.eu/project/id/101116772">Algorithmic Governance – A Public Perspective (AGAPP)</a>.
+In 2025, I held a postdoctoral fellowship at the
+<a href="https://www.helsinki.fi/en/networks/centre-social-data-science">Centre for Social Data Science (CSDS)</a>
+at the University of Helsinki.
+In 2024, I served as an adjunct professor at
+<a href="https://www.kimep.kz/college-of-social-sciences/kz/">KIMEP University</a>
+and completed my doctorate at the University of Bremen.
+My dissertation received the
+<a href="https://www.uni-bremen.de/en/university/university-communication-and-marketing/all-news/details/bremen-thesis-award-presented-1">Bremen Thesis Award</a>.
+In 2023, I was a visiting researcher at the
+<a href="https://ssh.nu.edu.kz/economics_about">Department of Economics at Nazarbayev University</a>.
+</p>
+
+<p>
+I teach courses in political science and institutional economics,
+with a focus on technological development, as well as applied methods classes in R.
+You can learn more about my <a href="/projects/">current research projects</a>
+and <a href="/teaching/">teaching experience</a> on my website.
+</p>
+
+<p>
+Feel free to reach out if you’d like to discuss my research or potential collaborations!
+</p>
