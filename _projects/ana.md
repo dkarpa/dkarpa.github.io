@@ -113,7 +113,7 @@ After this, respondents completed a **conjoint experiment** about automated bord
   </div>
 </div>
 
-Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all attributes matter equally, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
+Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all information is attended to, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
 
 ---
 
