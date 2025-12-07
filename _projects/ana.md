@@ -10,7 +10,7 @@ related_publications: false
 
 ## Understanding Behavioral Realism in Conjoint Experiments
 
-Conjoint experiments typically rely on marginal means or AMCEs to summarize preferences, implicitly assuming that respondents attend to all attributes and process information consistently. In reality, people often rely on cognitive shortcuts, selectively ignoring some attributes while focusing strongly on others. This project develops a behavioral-realist approach to conjoint analysis by incorporating *attribute non-attendance (ANA)* as a first-order feature of how individuals actually process information. I apply this framework to a  survey experiment conducted in Finland (N = 2,040), where citizens evaluated automated travel-authorization systems in a politically charged context. The goal is to try behavioral beyond traditional estimands and show how partisan motivations shape which attributes respondents attend to and how they interpret them.
+Conjoint experiments typically rely on marginal means or AMCEs to summarize preferences, implicitly assuming that respondents attend to all attributes and process information consistently. In reality, people often rely on cognitive shortcuts, selectively ignoring some attributes while focusing strongly on others. In this project, I develop a behavioral-realist approach to conjoint analysis by incorporating *attribute non-attendance (ANA)* as a first-order feature of how individuals actually process information. I apply this framework to a survey experiment conducted in Finland (N = 2,040), where citizens evaluated automated travel-authorization systems in a politically charged context. My goal is to move beyond traditional estimands and show how partisan motivations shape which attributes respondents attend to and how they interpret them.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-6 mt-3 mt-md-0">
@@ -28,10 +28,10 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
 
 ## Experimental Setup
 
-We draw on a survey experiment fielded in October 2024 as part of the Citizen Barometer at the University of Helsinki.  
+I draw on a survey experiment fielded in October 2024 as part of the Citizen Barometer at the University of Helsinki.  
 The sample consists of 2,040 Finnish adults, recruited to broadly match the national population. Respondents provided demographic background, attitudes toward automation, and their familiarity with automated border-control systems. Survey weights adjust the sample to reflect population benchmarks for region, language, age, gender, and education.
 
-Because the project focuses on the political conditions under which people legitimize automated decision-making, we also measured political orientations. Instead of traditional party identification, we rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, we divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
+Because the project focuses on the political conditions under which people legitimize automated decision-making, I also measured political orientations. Instead of traditional party identification, I rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, I divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
 
 The core experiment began with a simple default-setting manipulation. Respondents were randomly assigned to one of three conditions:
 
@@ -97,15 +97,13 @@ After this, respondents completed a **conjoint experiment** about automated bord
   </tbody>
 </table>
 
-
-
-Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all information is attended to, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
+My analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all information is attended to, I evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
 
 ---
 
 ## Estimating Attribute Non-Attendance with CRT-Conjoint
 
-To detect selective information use, we apply the **Conditional Randomization Test (CRT)** implemented in the  
+To detect selective information use, I apply the **Conditional Randomization Test (CRT)** implemented in the  
 <a href="https://doi.org/10.1017/pan.2023.41" target="_blank"><strong>CRTConjoint</strong></a> package.
 
 Unlike traditional conjoint analyses, CRTs test a simple question:  
@@ -130,10 +128,10 @@ The test does not assume additivity or linearity and captures any possible effec
 
 ## Extending Behavioral Realism with Tree-Based Estimation
 
-CRTs tell us *whether* an attribute mattered—tree-based models help us understand *how*.  
-Using Bayesian Additive Regression Trees (BART) for conjoint experiments (`cjbart`), we estimate individual-level effects and compute **variable importance** by political group. This allows us to uncover hidden decision rules: nonlinearities, thresholds, and interactions that cannot be detected by AMCEs.
+CRTs tell me *whether* an attribute mattered—tree-based models help me understand *how*.  
+Using Bayesian Additive Regression Trees (BART) for conjoint experiments (`cjbart`), I estimate individual-level effects and compute **variable importance** by political group. This allows me to uncover hidden decision rules: nonlinearities, thresholds, and interactions that cannot be detected by AMCEs.
 
-What is especially noteworthy is that tree-based diagnostics strongly mirror the CRT results. Across methods, we see:
+What is especially noteworthy is that tree-based diagnostics strongly mirror the CRT results. Across methods, I observe:
 
 - Consistent attention to institutional attributes (e.g., responsibility, human involvement)  
 - Selective ignoring of cost, appeal rights, and data collection among some partisan groups  
