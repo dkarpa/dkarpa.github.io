@@ -6,6 +6,6 @@ nav: true
 nav_order: 5
 cv_pdf: Karpa_CV_Oct25.pdf
 description: Download my full academic CV.
-toc:
-  sidebar: left
+# toc:
+#   sidebar: left
 ---
