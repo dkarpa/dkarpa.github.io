@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dkarpa.github.io/al-folio/sitemap.xml
+Sitemap: https://dkarpa.github.io/sitemap.xml
