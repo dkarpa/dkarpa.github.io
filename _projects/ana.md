@@ -33,15 +33,6 @@ The sample consists of 2,040 Finnish adults, recruited to broadly match the nati
 
 Because the project focuses on the political conditions under which people legitimize automated decision-making, we also measured political orientations. Instead of traditional party identification, we rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, we divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
 
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/CB_partisanship_dist.jpg" title="Distribution of partisanship" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-<div class="caption">
-  Distribution of partisan orientations in the sample, measured as the absolute difference in evaluations of Finland's most polarized parties.
-</div>
-
 The core experiment began with a simple default-setting manipulation. Respondents were randomly assigned to one of three conditions:
 
 - **Control** – no default mentioned  
@@ -106,12 +97,6 @@ After this, respondents completed a **conjoint experiment** about automated bord
   </tbody>
 </table>
 
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/experimentflowchartpaper.jpg" title="Experiment Flow" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
 
 Our analysis centers on how respondents *actually used* information while completing the conjoint tasks. Instead of assuming all information is attended to, we evaluate whether participants **attended to** each feature—and how this varied across political groups and treatment conditions.
 
