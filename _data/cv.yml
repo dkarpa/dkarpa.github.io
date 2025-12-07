@@ -4,15 +4,12 @@
     - name: Full Name
       value: David Karpa
     - name: Contact
-      value: |
-        TUM School of Social Sciences and Technology  
+      value: TUM School of Social Sciences and Technology  
         Arcisstr. 21  
         80333 Munich  
         Germany
     - name: Email
-      value: |
-        david.karpa@tum.de  
-        davidfkarpa@gmail.com
+      value: david.karpa@tum.de  
     - name: Website
       value: <a href="https://dkarpa.github.io">Personal website</a>
     - name: Google Scholar
