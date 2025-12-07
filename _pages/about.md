@@ -32,7 +32,7 @@ I study algorithmic governance — especially how such systems are interpreted a
 Using mixed empirical methods, I analyze attitudes, cognition, and behavior at the micro level.
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a>  
 has been published in <em>Comparative Political Studies</em>.
-</p>
+
 
 <p>
 I am currently a postdoctoral researcher at the
