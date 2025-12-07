@@ -421,9 +421,9 @@ ninja.data = [{
           description: "Attribute non-attendance, CRT-based diagnostics, and tree-based approaches for understanding cognitive shortcuts in conjoint tasks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ana/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+            },},{id: "projects-algorithmic-governance-institutional-gaps-and-political-control-in-central-asia",
+          title: 'Algorithmic Governance, Institutional Gaps, and Political Control in Central Asia',
+          description: "Evidence from a 2025 national survey experiment in Kazakhstan on when citizens support—and even welcome—algorithmic governance tools.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dig_gov/";
             },},{
