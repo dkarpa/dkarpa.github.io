@@ -1,7 +1,8 @@
-- title: Personal Information
-  type: map
-  contents:
-    - name: Full Name
-      value: David Karpa
-    - name: Email
-      value: david.karpa@tum.de
+#- title: Personal Information
+#  type: map
+#  contents:
+#    - name: Full Name
+#      value: David Karpa
+#    - name: Email
+#      value: david.karpa@tum.de
+#
