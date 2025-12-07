@@ -18,7 +18,7 @@ AGS offer a dual promise:
 - **Governance benefits:** reduced corruption, more efficient public services, faster bureaucracy  
 - **Political risks:** expanded surveillance, limits on civic freedoms, and tools for targeted repression  
 
-To understand how citizens evaluate these trade-offs, we conducted a **nationally matched online survey experiment (N = 3,124)** in March 2025 with NAC Analytica.
+To understand how citizens evaluate these trade-offs, we conducted a **nationally matched online survey experiment (N = 3,124)** in March 2025 in Kazakhstan.
 
 Our central question:
 
