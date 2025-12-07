@@ -11,7 +11,7 @@ related_publications: false
 ## Understanding Support for Algorithmic Governance in Autocracies
 
 Algorithmic governance systems (AGS) — such as facial recognition, automated decision-making, digital monitoring, and large-scale data integration — are rapidly spreading across developing and authoritarian states. 
-Kazakhstan, a key hub in China’s **Digital Silk Road**, is one of the earliest and most enthusiastic adopters.
+Kazakhstan, a key hub in China’s **Digital Silk Road**, is one of the earliest adopters.
 
 AGS offer a dual promise:
 
