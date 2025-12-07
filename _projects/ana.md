@@ -136,16 +136,34 @@ They provide a first indication of which features respondents interpret as **cle
 In the plot below, levels that produce substantially lower marginal means—such as *“No one responsible,” “Computer only,”* and *high fees*—signal strong negative reactions.  
 Later, the decision trees illustrate **how** respondents navigate these red flags in combination.
 
+### Marginal means (control group) and attribute importance (Random Forest)
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/mm_control_group_labels.jpg" title="Marginal means in the control group" class="img-fluid rounded z-depth-1" %}
+
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid 
+        path="assets/img/mm_control_group_labels.jpg" 
+        title="Marginal means in the control group" 
+        class="img-fluid rounded z-depth-1" 
+    %}
   </div>
+
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid 
+        path="assets/img/attr_imp.jpg" 
+        title="Attribute importance (Random Forest)" 
+        class="img-fluid rounded z-depth-1" 
+    %}
+  </div>
+
 </div>
 
 <div class="caption">
-  Marginal means for each attribute level in the control condition.  
-  Levels far below 0.5 indicate “red flags”—strong negative reactions to lack of accountability, full automation, high fees, and expanded data collection.
+Marginal means (left) indicate which attribute levels act as “red flags” or benefits in the control group.  
+Random Forest attribute importance (right) shows how often each attribute is used for prediction across thousands of decision trees.  
+Together, they reveal which features respondents consistently rely on when evaluating automated systems.
 </div>
+
 
 ---
 
@@ -161,21 +179,6 @@ Later, the decision trees illustrate **how** respondents navigate these red flag
 This example tree illustrates how respondents sequentially filter information.  
 Responsibility acts as the strongest early divider: when no institution is accountable, respondents behave very differently than when responsibility is assigned.  
 Lower branches then reveal “red flag” attributes — especially human involvement and appeal rights — that drive acceptance probabilities.
-</div>
-
----
-
-### Attribute importance (Random Forest)
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/attr_imp.jpg" title="Attribute importance (Random Forest)" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-
-<div class="caption">
-Random Forest variable importance confirms the CRT pattern: responsibility and decision structure dominate processing, while cost and data collection matter far less.  
-Both %IncMSE and IncNodePurity measures show the same ranking.
 </div>
 
 ---
