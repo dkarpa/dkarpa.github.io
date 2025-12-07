@@ -32,28 +32,52 @@ We implemented a **2 × 6 experiment**, crossing six message framings with an or
 
 ### **Schematic Overview of Experimental Conditions**
 
-\begingroup
-\small
-\begin{table}[htbp]
-\centering
-\begin{tabular}{|l|c|c|}
-\hline
-\textbf{Message Type} & \textbf{No Repression} & \textbf{+ Repression Cue} \\
-\hline
-Institutional gap & \textit{Corruption}             & \textit{Corruption + Repression} \\
-Institutional gap & \textit{Radicalization}         & \textit{Radicalization + Repression} \\
-Institutional gap & \textit{Security}               & \textit{Security + Repression} \\
-Institutional gap & \textit{Trust}                  & \textit{Trust + Repression} \\
-Institutional gap & \textit{Epidemics}              & \textit{Epidemics + Repression} \\
-None              & \textit{Control}                & \textit{Repression + Control} \\
-\hline
-\textbf{Total Conditions} & \multicolumn{2}{c|}{\textit{12 Treatment Arms (2 × 6)}} \\
-\hline
-\end{tabular}
-\caption{Schematic Overview of 2×6 Factorial Experimental Design}
-\label{tab:factorial_schematic_italic}
-\end{table}
-\endgroup
+<table style="width:100%; border-collapse: collapse; font-size: 0.9rem;">
+  <thead>
+    <tr>
+      <th style="border:1px solid #000; padding:6px;">Message Type</th>
+      <th style="border:1px solid #000; padding:6px;">No Repression</th>
+      <th style="border:1px solid #000; padding:6px;">+ Repression Cue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">Institutional gap</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Corruption</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Corruption + Repression</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">Institutional gap</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Radicalization</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Radicalization + Repression</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">Institutional gap</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Security</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Security + Repression</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">Institutional gap</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Trust</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Trust + Repression</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">Institutional gap</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Epidemics</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Epidemics + Repression</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px;">None</td>
+      <td style="border:1px solid #000; padding:6px;"><i>Control</i></td>
+      <td style="border:1px solid #000; padding:6px;"><i>Repression + Control</i></td>
+    </tr>
+    <tr>
+      <td style="border:1px solid #000; padding:6px; font-weight:bold;">Total Conditions</td>
+      <td colspan="2" style="border:1px solid #000; padding:6px; text-align:center;"><i>12 Treatment Arms (2 × 6)</i></td>
+    </tr>
+  </tbody>
+</table>
+
 
 This design allows us to estimate:
 
