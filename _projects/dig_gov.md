@@ -10,211 +10,177 @@ related_publications: false
 
 ## Understanding Support for Algorithmic Governance in Autocracies
 
-Algorithmic governance systems (AGS)—facial recognition, automated decision-making, digital monitoring, and data-driven public administration—are spreading rapidly across the globe. China has become a global leader in exporting such systems under its “Digital Silk Road,” and Central Asia is one of the key destination regions. Kazakhstan, in particular, has emerged as an enthusiastic adopter.
+Algorithmic governance systems (AGS) — such as facial recognition, automated decision-making, digital monitoring, and large-scale data integration — are rapidly spreading across developing and authoritarian states. 
+Kazakhstan, a key hub in China’s **Digital Silk Road**, is one of the earliest and most enthusiastic adopters.
 
 AGS offer a dual promise:
 
-- **Governance benefits:** reduced corruption, more efficient public services, faster bureaucratic processes  
-- **Repressive risks:** enhanced state surveillance, reduced civic freedoms, and the capacity to preempt dissent  
+- **Governance benefits:** reduced corruption, more efficient public services, faster bureaucracy  
+- **Political risks:** expanded surveillance, limits on civic freedoms, and tools for targeted repression  
 
-To understand how citizens in an autocratic or semi-authoritarian context evaluate these trade-offs, we fielded a **nationally matched survey experiment in Kazakhstan in March 2025 (N = 3,124)** in collaboration with NAC Analytica.
+To understand how citizens evaluate these trade-offs, we conducted a **nationally matched online survey experiment (N = 3,124)** in March 2025 with NAC Analytica.
 
-Our central question is straightforward:  
-### **Under what conditions do people support algorithmic governance—and when do they reject it as a tool of political control?**
+Our central question:
 
----
-
-## The Kazakhstani Context
-
-Kazakhstan is uniquely well suited for studying public reactions to AGS:
-
-- It is **rapidly digitizing**, adopting Chinese smart-city and surveillance technologies.
-- It sits **between democratization and entrenched autocracy**, with uncertain institutional futures.
-- It borders Xinjiang, where AGS has been used for **severe repression**—including against ethnic Kazakhs.
-- It faces well-known **institutional gaps**, above all corruption.
-
-This combination makes Kazakhstan an especially informative case for understanding how citizens weigh the governance promises and political risks of algorithmic systems.
+### **When do citizens welcome algorithmic governance — and when do they fear it as a tool of political control?**
 
 ---
 
-## Experimental Design
+## Experimental Design: A 2×6 Factorial Structure
 
-We implemented a **2 × 6 factorial survey experiment**:
+We implemented a **2 × 6 experiment**, crossing six message framings with an orthogonal repression cue.
 
-- **Six framings** describing potential uses of AGS:  
-  - corruption  
-  - religious fundamentalism  
-  - public security  
-  - social trust  
-  - public health  
-  - no justification (pure control)
+### **Schematic Overview of Experimental Conditions**
 
-- **Crossed with a repression cue**:  
-  - “These technologies can also be used to target protesters or journalists.”
+\begingroup
+\small
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|l|c|c|}
+\hline
+\textbf{Message Type} & \textbf{No Repression} & \textbf{+ Repression Cue} \\
+\hline
+Institutional gap & \textit{Corruption}             & \textit{Corruption + Repression} \\
+Institutional gap & \textit{Radicalization}         & \textit{Radicalization + Repression} \\
+Institutional gap & \textit{Security}               & \textit{Security + Repression} \\
+Institutional gap & \textit{Trust}                  & \textit{Trust + Repression} \\
+Institutional gap & \textit{Epidemics}              & \textit{Epidemics + Repression} \\
+None              & \textit{Control}                & \textit{Repression + Control} \\
+\hline
+\textbf{Total Conditions} & \multicolumn{2}{c|}{\textit{12 Treatment Arms (2 × 6)}} \\
+\hline
+\end{tabular}
+\caption{Schematic Overview of 2×6 Factorial Experimental Design}
+\label{tab:factorial_schematic_italic}
+\end{table}
+\endgroup
 
-This created **12 experimental conditions**, allowing us to isolate:
-1. **Which institutional gaps increase support**  
-2. **How support changes when the possibility of political repression is made salient**
+This design allows us to estimate:
 
-Respondents then evaluated their **support for AGS** on a 4-point scale.
-
----
-
-## Institutional Gaps: What Problems Do Citizens Perceive?
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/descriptive_gaps.jpg" title="Perceived institutional gaps in Kazakhstan" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-
-Corruption stands out as the most salient institutional gap, with nearly 90% of respondents seeing it as a problem.  
-Low social trust and crime are also widely perceived as challenges, while extremism and public health issues are somewhat less pressing.
-
-These perceptions help explain why AGS—which are often presented as modernizing solutions—receive such high baseline support.
-
----
-
-## High Baseline Support for AGS
-
-<div class="row justify-content-sm-center">
-  <div class="col-sm-10 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/descriptive_approval_only_control_gaps.jpg" title="Baseline approval for AGS by framing (no repression cue)" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-
-Even without any justification, **78% of respondents somewhat approve or fully approve** of AGS.  
-This level of enthusiasm resembles support in China and is noticeably higher than what we have found in other countries (including Russia).
-
-Institutional framings raise support **only modestly**, but corruption and religious fundamentalism emerge as the most compelling rationales.
+1. **How different institutional gaps affect support for AGS**  
+2. **How repression cues reshape attitudes**, and  
+3. **Which groups welcome or resist algorithmic repression**
 
 ---
 
-## Effects of Institutional Gap Framings
+# 1. Institutional Gaps in Kazakhstan
+
+The first step is understanding which problems citizens perceive as most severe.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ATE_no_cov_and_cov.jpg" title="Average treatment effects of institutional gap framings" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/combined_results_gaps.jpg" title="Gap perceptions, approval patterns, and institutional-gap treatment effects" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-Corruption and extremism framings generate small but consistent positive effects—even starting from a very high baseline.  
-Kazakhstani respondents appear to view AGS as particularly suitable for addressing these two challenges.
+### Key insights:
+
+- **Corruption dominates** public concern — nearly 90% see it as a major problem.  
+- Security and trust gaps are also salient.  
+- Epidemics and radicalization still matter, but less intensely.
+
+Despite this variation, **support for AGS is extremely high** across all framings:  
+even in the pure control group, **78% approve**.
+
+This baseline support resembles levels in China and exceeds those in Russia, Eastern Europe, and OECD democracies.
 
 ---
 
-## The Repression Cue: A Meaningful but Limited Backlash
+# 2. Do Institutional Gaps Increase Support for AGS?
 
-We now turn to the central tension in the study:  
-**How do citizens react when reminded that AGS can be used for political repression?**
-
-### Average effect  
-📉 Support drops by **5.9 percentage points**.
-
-This suggests that even in semi-authoritarian contexts, people do care about civil liberties.  
-However, the effect is **much smaller** than the 24-point decline we documented in Russia in 2022.
-
----
-
-## How Repression Shapes Support Across Framings
+We next estimate **average treatment effects (ATEs)** of each institutional-gap framing relative to the control.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/ATE_contrast_rep_and_control.jpg" title="Effects of repression cue contrasted with control" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/ATE_no_cov_and_cov.jpg" title="Average treatment effects of institutional gaps (with and without covariates)" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-Most groups reduce their support when repression is highlighted.  
-But the average hides substantial heterogeneity.
+### What do we learn?
+
+- **Corruption** and **radicalization** framings generate the strongest increases in support.  
+- Other gaps (security, trust, epidemics) generate **little or no average effect**.  
+- All effects are modest because baseline support is already extremely high.
+
+Still, citizens clearly see AGS as particularly appropriate for addressing **corruption** and **extremism** — two politically sensitive issues in Kazakhstan.
 
 ---
 
-## Heterogeneity: When Do People *Welcome* Repression?
+# 3. The Repression Cue: A Limited but Meaningful Backlash
 
-Some findings challenge standard theoretical expectations.
+We now introduce the key tension:
 
-For several groups, making repression explicit **increases** support for AGS:
-
-- **Residents of Almaty and Astana** show a strong positive reaction when corruption and repression are combined.  
-- **Russian-speaking minorities** disapprove of repression in general but *support* it when framed as targeting corruption.  
-- **Religious respondents** increase support when repression is paired with anti-extremism messaging.
-
-This leads to a central insight:
-
-### **For some citizens, repression is not a cost of AGS—it is a benefit.**
-
----
-
-## Summary of Conditional Treatment Effects
+### **How do citizens react when reminded that AGS can be used against protesters or journalists?**
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/CATE_combined.jpg" title="Conditional treatment effects across social groups" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/ags_int_pred_bin.jpg" title="Predicted support for AGS under control vs repression cue" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
-Several patterns emerge:
+### Findings:
 
-- Support for AGS is **highest among** Muslims, Kazakh-speakers, high-trust individuals, and ethnic Kazakhs.  
-- Corruption remains a compelling rationale **even when paired with repression**, especially for Russian-speakers and non-Muslims.  
-- Some groups appear to endorse “targeted repression” as a legitimate state response to corruption.
+- Repression reduces support by **5.9 percentage points** on average.  
+- This shows that even in a semi-authoritarian context, many citizens value civic freedoms.  
+- Yet the decline is **far smaller** than the 24-point drop we observed in Russia (2022).
 
-These results complicate the idea of a simple repression–legitimacy trade-off.
+Importantly, repression **does not reduce support uniformly** across all groups or framings.  
+For some combinations, repression *increases* support — a striking deviation from standard political-economy models.
 
----
-
-## A Puzzle: Why Does Repression Sometimes Increase Support?
-
-Our findings point to a theoretically important puzzle:
-
-### **Under certain conditions, political repression increases support for algorithmic governance.**
-
-This contradicts standard models that assume support should decline monotonically when repression is made salient.
-
-Possible explanations include:
-
-- A desire for order and discipline in a context of institutional decay  
-- Perceptions that repression is justified if targeted at “bad actors”  
-- Trust in the Kazakhstani state to use AGS for the public good  
-- Soviet or post-Soviet political socialization  
-- A belief that digital governance is modernizing and therefore desirable even if illiberal  
-
-Existing survey data cannot fully resolve these mechanisms.
+This leads us to the final section.
 
 ---
 
-## Next Steps: Qualitative Interviews
+# 4. Heterogeneous Effects: When Do People *Welcome* Repression?
 
-To better understand **why some citizens welcome algorithmic repression**, we are now collecting:
+One of the most surprising results is that certain groups **increase** their support for AGS when repression is made explicit.
 
-- **Semi-structured interviews in Almaty and Astana**  
-- **Focus groups with Kazakh-speaking and Russian-speaking communities**  
+The clearest example involves residents of Kazakhstan’s two largest cities:
 
-These qualitative data will help clarify:
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/CATE_urban.jpg" title="Conditional effects for residents of Almaty and Astana" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
 
-- How people draw the line between regulation and repression  
-- When punitive state action is seen as legitimate  
-- How AGS become symbolically attached to modernization, fairness, or state strength  
+### Key takeaways:
 
-This evidence will inform the next stage of the project.
+- **Urban residents (Almaty & Astana)** show the **highest baseline support**.  
+- When corruption is paired with repression, support **increases dramatically** — by about **0.5 points on a 4-point scale**.  
+- This is a surprisingly large effect.
+
+Across additional subgroups (not shown here):
+
+- **Russian-speakers** reject repression in most domains —  
+  **except when repression targets corruption**, which they strongly support.
+- **Religious respondents** show increased support when repression is tied to counter-extremism.
+- **High-trust individuals** remain supportive irrespective of repression cues.
+
+### Interpretation:
+
+For some citizens, repression is **not a cost** of AGS —  
+### **it is a feature.**
+
+This complicates the standard assumption that repression uniformly reduces support for digital governance tools.
 
 ---
 
-## Preliminary Evidence & Outlook
+# Conclusion
 
-This project offers the first experimental evidence on how institutional gap framings and repression cues shape support for algorithmic governance in a Central Asian autocracy.
+This study provides the first experimental evidence on how institutional-gap framings and repression cues shape support for algorithmic governance in a Central Asian autocracy.
 
-Key takeaways:
+### Main findings:
 
-- **Baseline support is extremely high** (78%).  
-- **Corruption** is the most powerful justification for AGS adoption.  
-- **Repression reduces support overall**, but the effect is limited.  
-- **Crucially, some groups increase their support when repression is highlighted.**
+- **Baseline support for AGS is extremely high** (78%).  
+- **Corruption** is the strongest institutional rationale for AGS adoption.  
+- **Repression cues reduce support**, but only slightly.  
+- **Some groups welcome algorithmic repression** when it targets perceived societal “threats.”  
 
-This last finding raises one of the most intriguing questions for the political economy of digital governance:
+These results challenge the conventional repression–legitimacy trade-off model.  
+In Kazakhstan, support for digital governance does not always decline when authoritarian risks are highlighted.  
+Under certain conditions, **algorithmic repression becomes politically acceptable — even desirable.**
 
-### **Why do some citizens welcome algorithmic repression, and under what conditions?**
-
-We are now conducting follow-up interviews to better understand this puzzle.
+We are now conducting follow-up qualitative interviews in Almaty and Astana to understand **why**.
 
 More results soon.
+
