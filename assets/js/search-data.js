@@ -418,7 +418,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-behavioral-realism-in-conjoint-experiments",
           title: 'Behavioral Realism in Conjoint Experiments',
-          description: "Attribute non-attendance, CRT-based diagnostics, and decision-tree approaches to understanding cognitive shortcuts in conjoint tasks.",
+          description: "Attribute non-attendance, CRT-based diagnostics, and tree-based approaches for understanding cognitive shortcuts in conjoint tasks.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ana/";
             },},{id: "projects-project-2",
