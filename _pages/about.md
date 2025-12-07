@@ -6,7 +6,7 @@ subtitle: ""
 
 profile:
   align: right
-  image: porthania_smol.jpg
+  image: Porthania_smol.jpg
   image_circular: false
   more_info: >
     <p></p>
