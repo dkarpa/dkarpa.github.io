@@ -234,7 +234,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2023/post-bibliography/";
+            window.location.href = "/blog/2023/post-bibliography.md/";
           
         },
       },{id: "post-a-post-with-jupyter-notebook",
