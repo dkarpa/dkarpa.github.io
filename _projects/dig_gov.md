@@ -167,9 +167,10 @@ The clearest example involves residents of Kazakhstan’s two largest cities:
   </div>
 </div>
 
-It appears that corruption is such a big problem (remember the first Figure in the beginnning) that citizens are eager to give the state more power to tackle this. 
+It appears that corruption is such a serious problem (recall the first figure at the beginning) that citizens are eager to give the state more power to address it.
 
-More than that, they increase their support **even more** when the state is able to use repression, but **only** in conjunction with battling corruption.
+More than that, they **increase their support even further** when the state is able to use repression — but **only** when repression is presented *together with* efforts to combat corruption.
+
 
 ### Key takeaways:
 
