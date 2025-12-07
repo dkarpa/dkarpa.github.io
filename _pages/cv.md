@@ -5,7 +5,7 @@ title: CV
 nav: true
 nav_order: 4
 cv_pdf: Karpa_CV_Oct25.pdf
-description: CLick the PDF button to download my full academic CV.
+description: Click the PDF button to download my full academic CV.
  toc:
    sidebar: left
 ---
