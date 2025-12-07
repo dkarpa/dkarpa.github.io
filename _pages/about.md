@@ -25,10 +25,7 @@ latest_posts:
   limit: 3
 ---
 
-<p>Welcome!</p>
-
-<p>
-I'm David, an applied economist specializing in the political economy of digital and automated governance.
+I'm David Karpa, an applied economist specializing in the political economy of digital and automated governance.
 My research explores how political and economic institutions interact with technological change,
 with a particular focus on artificial intelligence and automation.
 I study algorithmic governance — especially how such systems are interpreted and understood by citizens.
