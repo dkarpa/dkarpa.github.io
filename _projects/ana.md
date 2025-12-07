@@ -14,7 +14,7 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-6 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/experiment flowchart paper.jpg" title="Experiment structure" class="img-fluid rounded z-depth-1" %}
+    {% include figure.liquid path="assets/img/experimentflowchartpaper.jpg" title="Experiment structure" class="img-fluid rounded z-depth-1" %}
   </div>
   <div class="col-sm-6 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/CB_partisanship_dist.jpg" title="Distribution of partisanship" class="img-fluid rounded z-depth-1" %}
@@ -26,7 +26,7 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
 
 ## Estimating Attribute Non-Attendance Using CRT-Conjoint
 
-To measure selective information use, I implement *conditional randomization tests* (CRTs) using the **CRTConjoint** package. Unlike standard choice models, CRTs test whether an attribute had *any* effect on choices—additive, interactive, or heterogeneous—without assuming a specific functional form. This makes attribute non-attendance empirically detectable rather than assumed. Across partisan groups and system-outcome conditions, the analysis reveals systematic patterns: core institutional attributes (e.g., responsibility, human involvement) are attended to consistently, while others (cost, appeal rights, data collection) are strategically ignored depending on respondents’ ideological priors. Together with open-ended responses, these diagnostics illustrate how motivated reasoning shapes selective attention in complex choice tasks.
+To measure selective information use, I implement *conditional randomization tests* (CRTs) using the **CRTConjoint** package. Unlike standard choice models, CRTs test whether an attribute had *any* effect on choicesâ€”additive, interactive, or heterogeneousâ€”without assuming a specific functional form. This makes attribute non-attendance empirically detectable rather than assumed. Across partisan groups and system-outcome conditions, the analysis reveals systematic patterns: core institutional attributes (e.g., responsibility, human involvement) are attended to consistently, while others (cost, appeal rights, data collection) are strategically ignored depending on respondentsâ€™ ideological priors. Together with open-ended responses, these diagnostics illustrate how motivated reasoning shapes selective attention in complex choice tasks.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">
@@ -42,6 +42,6 @@ To measure selective information use, I implement *conditional randomization tes
 
 ## Extending Behavioral Realism with Tree-Based Models
 
-Attribute non-attendance is an important step toward behavioral realism, but tree-based methods can further uncover heterogeneous processing strategies. Decision trees and model-based recursive partitioning, for example, allow us to recover latent decision rules, interaction structures, and subgroup-specific heuristics that are obscured in pooled AMCEs. These methods identify respondent segments that systematically prioritize certain attributes, ignore others, or engage in threshold-based reasoning. In the next stage of this project, I extend the behavioral-realist toolkit by integrating decision-tree diagnostics with CRT-based ANA measures, producing a multidimensional account of how people actually reason through conjoint tasks—particularly in politically polarized contexts.
+Attribute non-attendance is an important step toward behavioral realism, but tree-based methods can further uncover heterogeneous processing strategies. Decision trees and model-based recursive partitioning, for example, allow us to recover latent decision rules, interaction structures, and subgroup-specific heuristics that are obscured in pooled AMCEs. These methods identify respondent segments that systematically prioritize certain attributes, ignore others, or engage in threshold-based reasoning. In the next stage of this project, I extend the behavioral-realist toolkit by integrating decision-tree diagnostics with CRT-based ANA measures, producing a multidimensional account of how people actually reason through conjoint tasksâ€”particularly in politically polarized contexts.
 
 More content on the decision-tree component will be added soon.
