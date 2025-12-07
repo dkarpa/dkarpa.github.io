@@ -209,7 +209,7 @@ These results challenge the conventional repression–legitimacy trade-off model
 In Kazakhstan, support for digital governance does not always decline when authoritarian risks are highlighted.  
 Under certain conditions, **algorithmic repression becomes politically acceptable — even desirable.**
 
-We are now conducting follow-up qualitative interviews in Almaty and Astana to understand **why**.
+We are now conducting follow-up qualitative interviews in Almaty, Astana, and across the country.
 
 More results soon.
 
