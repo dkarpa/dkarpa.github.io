@@ -7,7 +7,7 @@ subtitle: ""
 profile:
   align: right
   image: Porthania_smol.jpg
-  image_circular: false
+  image_circular: true
   more_info: >
     <p></p>
 
