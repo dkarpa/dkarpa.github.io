@@ -28,12 +28,10 @@ Conjoint experiments typically rely on marginal means or AMCEs to summarize pref
 
 ## Experimental Setup
 
-We draw on a preregistered survey experiment fielded in October 2024 as part of the Citizen Barometer at the University of Helsinki  
-(<a href="https://aspredicted.org/48v2-9qk5.pdf" target="_blank">pre-registration</a>,  
-<a href="https://www.helsinki.fi/fi/projektit/kansalaisbarometri" target="_blank">project website</a>).  
+We draw on a survey experiment fielded in October 2024 as part of the Citizen Barometer at the University of Helsinki.  
 The sample consists of 2,040 Finnish adults, recruited to broadly match the national population. Respondents provided demographic background, attitudes toward automation, and their familiarity with automated border-control systems. Survey weights adjust the sample to reflect population benchmarks for region, language, age, gender, and education.
 
-Because the project focuses on the political conditions under which people trust or distrust automated decision-making, we also measured political orientations. Instead of traditional party identification, which is less informative in multiparty systems, we rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, we divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
+Because the project focuses on the political conditions under which people legitimize automated decision-making, we also measured political orientations. Instead of traditional party identification, we rely on a feeling-thermometer measure: respondents rated major parties from 0–10. The *distance* between evaluations of the left-wing (Vasemmistoliitto) and right-wing (Perussuomalaiset) parties provides a continuous indicator of political leaning. Following prior research, we divide respondents into **Left**, **Center**, and **Right** based on tertiles of this distribution.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-8 mt-3 mt-md-0">
@@ -51,6 +49,63 @@ The core experiment began with a simple default-setting manipulation. Respondent
 - **Reject** – the system defaults to rejecting all asylum seekers  
 
 After this, respondents completed a **conjoint experiment** about automated border-control systems. Each system contained five attributes (e.g., data collected, human involvement, cost). In each task, respondents compared two systems, chose the one they preferred, and rated each system’s legitimacy. Each person completed three such tasks, giving six evaluations.
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Attribute</strong></th>
+      <th><strong>Levels</strong></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><strong>1) Who makes entry decisions?</strong></td>
+      <td>
+        1a) Computer makes decisions without human involvement.<br>
+        1b) Computer recommends, but a human makes the final decision.<br>
+        1c) Computer makes decisions, but border guards can change the decision.
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>2) How much do applicants pay?</strong></td>
+      <td>
+        2a) Free to use.<br>
+        2b) Costs EUR 7 per application.<br>
+        2c) Costs EUR 100 per application.
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>3) Which kind of personal data will be collected?</strong></td>
+      <td>
+        3a) Collects ID, fingerprint, and face data.<br>
+        3b) Collects ID, fingerprint, face, and health self-assessment data.<br>
+        3c) Collects ID only.
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>4) Who is responsible when the system makes a mistake?</strong></td>
+      <td>
+        4a) The Finnish border guard (Rajavartiolaitos).<br>
+        4b) Ministry of the Interior that developed the system.<br>
+        4c) No one.
+      </td>
+    </tr>
+
+    <tr>
+      <td><strong>5) Is there a possibility to appeal?</strong></td>
+      <td>
+        5a) Appeals allowed, with a decision in 24 hours.<br>
+        5b) Appeals allowed, with a decision in one week.<br>
+        5c) The decision is final and cannot be appealed.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-10 mt-3 mt-md-0">
