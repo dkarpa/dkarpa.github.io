@@ -129,16 +129,76 @@ The test does not assume additivity or linearity and captures any possible effec
 ## Extending Behavioral Realism with Tree-Based Estimation
 
 CRTs tell me *whether* an attribute mattered—tree-based models help me understand *how*.  
-Using Bayesian Additive Regression Trees (BART) for conjoint experiments (`cjbart`), I estimate individual-level effects and compute **variable importance** by political group. This allows me to uncover hidden decision rules: nonlinearities, thresholds, and interactions that cannot be detected by AMCEs.
+Before turning to trees, it is helpful to look at the **marginal means** in the control group.  
+These estimates show which attribute levels increase or decrease acceptance *on average*, without conditioning on partisanship or treatment.  
+They provide a first indication of which features respondents interpret as **clear benefits or clear red flags**.
 
-What is especially noteworthy is that tree-based diagnostics strongly mirror the CRT results. Across methods, I observe:
+In the plot below, levels that produce substantially lower marginal means—such as *“No one responsible,” “Computer only,”* and *high fees*—signal strong negative reactions.  
+Later, the decision trees illustrate **how** respondents navigate these red flags in combination.
 
-- Consistent attention to institutional attributes (e.g., responsibility, human involvement)  
-- Selective ignoring of cost, appeal rights, and data collection among some partisan groups  
-- Parallel patterns across treatment arms  
-- Robustness across statistical principles (randomization tests, ensemble methods, Bayesian trees)  
+### Marginal means (control group) and attribute importance (Random Forest)
 
-The next figure summarizes ANA across **three diagnostic procedures**—CRT, Random Forest MSE importance, and Random Forest node purity—illustrating how convergent the results are.
+<div class="row justify-content-sm-center">
+
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid 
+        path="assets/img/mm_control_group_labels.jpg" 
+        title="Marginal means in the control group" 
+        class="img-fluid rounded z-depth-1" 
+    %}
+  </div>
+
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid 
+        path="assets/img/attr_imp.jpg" 
+        title="Attribute importance (Random Forest)" 
+        class="img-fluid rounded z-depth-1" 
+    %}
+  </div>
+
+</div>
+
+<div class="caption">
+Marginal means (left) indicate which attribute levels act as “red flags” or benefits in the control group.  
+Random Forest attribute importance (right) shows how often each attribute is used for prediction across thousands of decision trees.  
+Together, they reveal which features respondents consistently rely on when evaluating automated systems.
+</div>
+
+
+---
+
+### Example decision tree: how respondents navigate red flags
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/example_tree.png" title="Example decision tree" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<div class="caption">
+This example tree illustrates how respondents sequentially filter information.  
+Responsibility acts as the strongest early divider: when no institution is accountable, respondents behave very differently than when responsibility is assigned.  
+Lower branches then reveal “red flag” attributes — especially human involvement and appeal rights — that drive acceptance probabilities.
+</div>
+
+---
+
+### Attribute-level importance (Random Forest)
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/attr_level_imp.jpg" title="Attribute-level importance" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+<div class="caption">
+Attribute-level VIMP reveals which *specific levels* respondents reacted to.  
+Weak accountability ('No one responsible'), full automation without human oversight, and high fees emerge as especially influential.
+</div>
+
+---
+
+### Convergent evidence across three diagnostic procedures
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -147,7 +207,8 @@ The next figure summarizes ANA across **three diagnostic procedures**—CRT, Ran
 </div>
 
 <div class="caption">
-  Attribute non-attendance across partisan groups using three estimation strategies. Despite relying on different statistical foundations, all methods converge on the same substantive conclusion: respondents selectively attend to information in ways aligned with their political motivations.
+Attribute non-attendance across partisan groups using three estimation strategies.  
+Despite relying on different statistical foundations, all methods converge on the same substantive conclusion: respondents selectively attend to information in ways aligned with their political motivations.
 </div>
 
-Together, CRT diagnostics and tree-based models provide a multidimensional picture of how people actually process conjoint tasks—often relying on shortcuts, ignoring information, and attending selectively when an attribute reinforces or challenges political attitudes. More content on the decision-tree component will be added soon.
+Together, CRT diagnostics and tree-based models provide a multidimensional picture of how people actually process conjoint tasks—often relying on shortcuts, ignoring information, and attending selectively when an attribute reinforces or challenges political attitudes.
