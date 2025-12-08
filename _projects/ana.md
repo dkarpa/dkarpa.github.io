@@ -184,7 +184,7 @@ Lower branches then reveal “red flag” attributes — especially human involv
 It seems that respondents are *avoiding* a specific level they don't like. This pattern is more consistent with regret minimization than with standard **utility maximization**.
 </div>
 
-[regret minimization](https://academic.oup.com/ej/article-abstract/92/368/805/5220411/)
+See, for example: [regret minimization](https://academic.oup.com/ej/article-abstract/92/368/805/5220411/)
 
 
 ---
