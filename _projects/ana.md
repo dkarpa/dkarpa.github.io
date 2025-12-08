@@ -213,4 +213,21 @@ Attribute non-attendance across partisan groups using three estimation strategie
 Despite relying on different statistical foundations, all methods converge on the same substantive conclusion: respondents selectively attend to information in ways aligned with their political motivations.
 </div>
 
+---
+
+### How the three-method ANA diagnostic was estimated
+
+The final heatmap compares attribute non-attendance (ANA) across three nonparametric diagnostics: **CRT**, **Random Forest permutation importance (RF-MSE)**, and **Random Forest node-purity importance (RF-Purity)**. For each partisan group and experimental context, I first estimate CRT-based ANA using the *CRTConjoint* framework, which tests whether an attribute made *any* difference to respondents’ choices relative to a randomization distribution. Attributes that significantly affect choices are classified as *attended*; those that do not are classified as *not attended*.
+
+To build comparable tree-based diagnostics, I fit large random forest models predicting respondents’ conjoint choices from the five attributes. Because each attribute has several levels, I work with dummy variables and then collapse level-specific variable importance back to the attribute level. I rely on two standard importance measures:  
+- **RF-MSE (%IncMSE)** – the increase in out-of-bag prediction error when an attribute is permuted. If permuting an attribute does not harm predictive accuracy, it was effectively ignored.  
+- **RF-Purity (IncNodePurity)** – the total reduction in node impurity attributable to an attribute across all trees. Attributes that rarely split nodes or fail to reduce uncertainty receive near-zero importance.
+
+For each group–attribute combination, I then run a **permutation test**: the choice outcome is randomly permuted (R = 1,000), a new random forest is refitted for each permuted dataset, and the resulting distribution of importance values is used as a null benchmark. An attribute is classified as *attended* if its observed importance lies in the upper tail of this null distribution (after multiple-testing correction); otherwise, it is classified as *not attended*.
+
+Despite relying on different estimands and computational strategies, **CRT, RF-MSE, and RF-Purity produce highly consistent ANA patterns**. The same attributes—especially responsibility, appeal rights, and human involvement in the decision—emerge as clearly attended, while others show systematic non-attendance in specific partisan and treatment contexts. This convergence suggests that selective information use is a robust behavioral feature of how respondents process conjoint tasks, rather than an artifact of any single estimation method.
+
+
 Together, CRT diagnostics and tree-based models provide a multidimensional picture of how people actually process conjoint tasks—often relying on shortcuts, ignoring information, and attending selectively when an attribute reinforces or challenges political attitudes.
+
+We are writing a paper on automated decision-making in public administration, and I am writing a paper on behavioral realism in conjoint experiments. Stay tuned!
