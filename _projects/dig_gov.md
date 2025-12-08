@@ -10,6 +10,8 @@ related_publications: false
 
 ## Understanding Support for Algorithmic Governance in Autocracies
 
+Michael Rochlitz ([website](https://sites.google.com/site/michaelrochlitz/)) and I extend our earlier research on digital governance — most recently in our *Comparative Political Studies* article on public support for digital solutions ([link](https://journals.sagepub.com/doi/10.1177/00104140241290208)) — to explore where the “entry points” for technology acceptance lie in autocracies, and how people weigh efficiency and convenience against the risks of surveillance and political control.
+
 Algorithmic governance systems (AGS) — such as facial recognition, automated decision-making, digital monitoring, and large-scale data integration — are rapidly spreading across developing and authoritarian states. 
 Kazakhstan, a key hub in China’s **Digital Silk Road**, is one of the earliest adopters.
 
