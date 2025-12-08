@@ -180,7 +180,9 @@ Together, they reveal which features respondents consistently rely on when evalu
 <div class="caption">
 This example tree illustrates how respondents sequentially filter information.  
 Responsibility acts as the strongest early divider: when no institution is accountable, respondents behave very differently than when responsibility is assigned.  
-Lower branches then reveal “red flag” attributes — especially human involvement and appeal rights — that drive acceptance probabilities.
+Lower branches then reveal “red flag” attributes — especially human involvement and appeal rights — that drive acceptance probabilities. 
+It seems that respondents are *avoiding* a specific level they don’t like. This pattern is more consistent with [regret minimization](https://academic.oup.com/ej/article-abstract/92/368/805/5220411)—than with standard **utility maximization**.
+
 </div>
 
 ---
