@@ -10,6 +10,7 @@ related_publications: false
 
 ## Understanding Behavioral Realism in Conjoint Experiments
 
+This project is part of my work in the ERC-funded project [Algorithmic Governance: A Public Perspective](https://www.hfp.tum.de/agapp/research/projects/algorithmic-governance-a-public-perspective/) together with [Daria Gritsenko](https://www.hfp.tum.de/agapp/team/prof-dr-daria-gritsenko/).
 Conjoint experiments typically rely on marginal means or AMCEs to summarize preferences, implicitly assuming that respondents attend to all attributes and process information consistently. In reality, people often rely on cognitive shortcuts, selectively ignoring some attributes while focusing strongly on others. In this project, I develop a behavioral-realist approach to conjoint analysis by incorporating *attribute non-attendance (ANA)* as a first-order feature of how individuals actually process information. I apply this framework to a survey experiment conducted in Finland (N = 2,040), where citizens evaluated automated travel-authorization systems in a politically charged context. My goal is to move beyond traditional estimands and show how partisan motivations shape which attributes respondents attend to and how they interpret them.
 
 <div class="row justify-content-sm-center">
