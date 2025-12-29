@@ -1,8 +1,12 @@
 metadata:
-  last_updated: '2025-12-19'
+  last_updated: '2025-12-29'
 papers:
+  G24AjDUAAAAJ:8k81kl-MbHgC:
+    citations: 0
+    title: 'Digital Surveillance and Self-Censorship in Autocracies: Evidence from a Survey Experiment in Kazakhstan'
+    year: Unknown Year
   G24AjDUAAAAJ:9yKSN-GCB0IC:
-    citations: 32
+    citations: 33
     title: A transparency checklist for carbon footprint calculations applied within a systematic review of virtual care interventions
     year: '2022'
   G24AjDUAAAAJ:IjCSPb-OGe4C:
@@ -22,7 +26,7 @@ papers:
     title: Language Affinity, Russian Media and Sanctions Evasion
     year: '2025'
   G24AjDUAAAAJ:qjMakFHDy7sC:
-    citations: 8
+    citations: 10
     title: Authoritarian surveillance and public support for digital governance solutions
     year: '2025'
   G24AjDUAAAAJ:u-x6o8ySG0sC:
