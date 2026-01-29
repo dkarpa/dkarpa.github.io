@@ -37,7 +37,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-we-asked-americans-about-government-surveillance-in-2022-now-it-39-s-happening",
+        
+          title: "We Asked Americans About Government Surveillance in 2022. Now It&#39;s Happening.",
+        
+        description: "Our 2022 survey experiment described exactly what ICE is doing today. Combining facial recognition with government databases to track political protesters.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/surveillance-experiment-ice/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
