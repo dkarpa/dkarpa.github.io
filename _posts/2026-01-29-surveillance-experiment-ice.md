@@ -7,7 +7,7 @@ description: Our 2022 survey experiment described exactly what ICE is doing toda
 tags: research surveillance democracy experiment
 categories: research
 thumbnail: assets/img/dgs_repression_age.png
-giscus_comments: true
+giscus_comments: false
 related_posts: false
 ---
 
