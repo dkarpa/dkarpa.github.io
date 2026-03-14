@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-we-asked-americans-about-government-surveillance-in-2022-now-it-39-s-happening",
+        },{id: "post-surveillance-silences-the-informed-evidence-from-kazakhstan",
+        
+          title: "Surveillance Silences the Informed: Evidence from Kazakhstan",
+        
+        description: "A survey experiment in Kazakhstan shows that surveillance-induced self-censorship is driven by an informed elite with access to international media.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/surveillance-self-censorship-kazakhstan/";
+          
+        },
+      },{id: "post-we-asked-americans-about-government-surveillance-in-2022-now-it-39-s-happening",
         
           title: "We Asked Americans About Government Surveillance in 2022. Now It&#39;s Happening.",
         
