@@ -25,11 +25,10 @@ latest_posts:
   limit: 3
 ---
 
-I'm David Karpa, an applied economist specializing in the political economy of digital and automated governance.
-My research explores how political and economic institutions interact with technological change,
-with a particular focus on artificial intelligence and automation.
-I study algorithmic governance — especially how such systems are interpreted and understood by citizens.
-Using mixed empirical methods, I analyze attitudes, cognition, and behavior at the micro level.
+I'm David Karpa, a political economist studying public attitudes, political psychology, and political behavior.
+My research asks how people make sense of automation in public administration,
+and how economic inequality and insecurity contribute to processes of autocratisation.
+Across both lines of inquiry, I use mixed empirical methods to analyze how technological and economic change reshape the relationship between citizens and the state at the micro level.
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> has been published in <em>Comparative Political Studies</em>.
 My work on <a href="https://dkarpa.github.io/assets/pdf/karpa2026_self-censorship.pdf">digital surveillance and self-censorship</a> has been published in <em>Political Behavior</em>.
 
