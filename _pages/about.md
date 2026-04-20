@@ -6,7 +6,7 @@ subtitle: ""
 
 profile:
   align: right
-  image: IMG_9529_bw_cut.JPG
+  image: IMG_9529_bw_cut.jpg
   image_circular: true
   more_info: >
     <p></p>
