@@ -31,6 +31,7 @@ and how economic inequality and insecurity contribute to processes of autocratis
 Across both lines of inquiry, I use mixed empirical methods to analyze how technological and economic change reshape the relationship between citizens and the state at the micro level.
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> has been published in <em>Comparative Political Studies</em>.
 My work on <a href="https://dkarpa.github.io/assets/pdf/karpa2026_self-censorship.pdf">digital surveillance and self-censorship</a> has been published in <em>Political Behavior</em>.
+Together with Michael Rochlitz, I am the co-author of <a href="https://www.penguin.de/buecher/karpa-rochlitz-totale-ueberwachung/paperback/9783453219359"><em>Totale Überwachung: Warum wir uns freiwillig vom Staat die Freiheit rauben lassen</em></a> (Heyne, 2026), a German-language trade book on surveillance states.
 
 
 <p>
