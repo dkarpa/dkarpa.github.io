@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-software",
+          title: "software",
+          description: "Open-source software I develop and maintain for political-science research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/software/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Click the PDF button to download my full academic CV.",
@@ -75,7 +82,12 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-algorithmic-governance-institutional-gaps-and-political-control-in-central-asia",
+          section: "News",},{id: "projects-cjdiag-diagnostic-tools-for-conjoint-survey-experiments",
+          title: 'cjdiag — Diagnostic Tools for Conjoint Survey Experiments',
+          description: "An R package that diagnoses how respondents actually decide in conjoint experiments — which attribute levels gate choices, which respondents ignore, and in what order levels settle decisions.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cjdiag/";
+            },},{id: "projects-algorithmic-governance-institutional-gaps-and-political-control-in-central-asia",
           title: 'Algorithmic Governance, Institutional Gaps, and Political Control in Central Asia',
           description: "Evidence from a 2025 national survey experiment in Kazakhstan on when citizens support—and even welcome—algorithmic governance tools.",
           section: "Projects",handler: () => {
