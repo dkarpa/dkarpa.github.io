@@ -7,7 +7,6 @@ nav: true
 nav_order: 6
 ---
 
-
 <table>
   <thead>
     <tr>

@@ -49,7 +49,7 @@ In our 2022 survey data, the partisan divide on protest surveillance was surpris
     Support for protest-tracking surveillance by political views in 2022.
 </div>
 
-Why? In our 2022 data, liberals actually showed *slightly higher* support for protest-tracking surveillance than conservatives (43% vs 40%). This is counterintuitive until you consider that the question asked about a system to track "unauthorized" protests. Democrats may have been thinking about January 6th; Republicans may have been thinking about Black Lives Matter.
+Why? In our 2022 data, liberals actually showed _slightly higher_ support for protest-tracking surveillance than conservatives (43% vs 40%). This is counterintuitive until you consider that the question asked about a system to track "unauthorized" protests. Democrats may have been thinking about January 6th; Republicans may have been thinking about Black Lives Matter.
 
 Data from [America's Political Pulse](https://americaspoliticalpulse.com/data) (Westwood & Lelkes, 2024) on a related question shows how views on protest have diverged since 2022.
 
@@ -66,7 +66,7 @@ When asked whether they support someone protesting without a permit against the 
 
 ## The Ratchet Effect
 
-In our [paper published in *Comparative Political Studies*](https://doi.org/10.1177/00104140241290208), we discuss what we call the technological "ratchet effect." Once surveillance infrastructure is built, it can become difficult to dismantle. The facial recognition databases, data-sharing agreements, and AI systems being deployed today may outlast any particular administration.
+In our [paper published in _Comparative Political Studies_](https://doi.org/10.1177/00104140241290208), we discuss what we call the technological "ratchet effect." Once surveillance infrastructure is built, it can become difficult to dismantle. The facial recognition databases, data-sharing agreements, and AI systems being deployed today may outlast any particular administration.
 
 We are seeing this play out in real time. Through the 2025 domestic policy bill, [Congress allocated $75 billion to ICE alone](https://www.nytimes.com/2026/01/28/us/politics/ice-funding-congress.html), making it the highest-funded federal law enforcement agency in the country. This money is available until September 2029, with no reporting requirements and no restrictions on how it can be spent. Even a government shutdown would not stop ICE operations because the funds have already been allocated.
 
@@ -74,7 +74,7 @@ Meanwhile, [DOGE employees have been accessing sensitive personal data](https://
 
 This is one way the ratchet effect operates. Once data has been collected and shared, you cannot make someone un-have it. Once databases are connected and contractors like Palantir have access, it is too late. ICE is now [using a Palantir app called "Elite"](https://www.bmj.com/content/392/bmj.s168) that pulls health records, addresses, and photos from Medicaid data on 79 million Americans to decide where to conduct raids.
 
-Beyond Palantir, ICE has purchased tools called [Tangles and Webloc](https://www.mprnews.org/episode/2026/01/12/how-ice-uses-phone-and-internet-data-to-identify-and-track-people) to monitor social media activity and track cell phone locations. The location data comes not from telecom companies, which would require a warrant, but from the advertising ecosystem. When an ad loads in an app, location data is harvested and sold to government contractors. Users can draw a circle around a protest location and track where those phones go afterward. This practice is [well-established](https://www.nytimes.com/2024/02/28/books/review/means-of-control-byron-tau-the-sentinel-state-minxin-pei.html). Byron Tau documented it in his 2024 book [*Means of Control*](https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/), showing how intelligence agencies circumvent domestic spying restrictions by purchasing "publicly available" data from advertising exchanges.
+Beyond Palantir, ICE has purchased tools called [Tangles and Webloc](https://www.mprnews.org/episode/2026/01/12/how-ice-uses-phone-and-internet-data-to-identify-and-track-people) to monitor social media activity and track cell phone locations. The location data comes not from telecom companies, which would require a warrant, but from the advertising ecosystem. When an ad loads in an app, location data is harvested and sold to government contractors. Users can draw a circle around a protest location and track where those phones go afterward. This practice is [well-established](https://www.nytimes.com/2024/02/28/books/review/means-of-control-byron-tau-the-sentinel-state-minxin-pei.html). Byron Tau documented it in his 2024 book [_Means of Control_](https://www.penguinrandomhouse.com/books/706321/means-of-control-by-byron-tau/), showing how intelligence agencies circumvent domestic spying restrictions by purchasing "publicly available" data from advertising exchanges.
 
 In hybrid regimes and countries that swing between more and less authoritarian forms of government, a well-functioning surveillance infrastructure plays the role of a technological ratchet. It can permit a country to switch from softer to harder authoritarianism and make it harder to switch back and democratize again by repressing and intimidating protesters.
 
@@ -90,4 +90,4 @@ Privacy is not primarily an ethical question. It is a political one.
 
 ---
 
-*This post draws on findings from "Authoritarian Surveillance and Public Support for Digital Governance Solutions" by David Karpa and [Michael Rochlitz](https://sites.google.com/site/michaelrochlitz/), published in Comparative Political Studies (2025, Vol. 58, No. 10, pp. 2237-2265), and on data from Westwood & Lelkes (2024), [America's Political Pulse](https://americaspoliticalpulse.com/data). For the full methodology and cross-country comparisons, see the [paper](https://doi.org/10.1177/00104140241290208).*
+_This post draws on findings from "Authoritarian Surveillance and Public Support for Digital Governance Solutions" by David Karpa and [Michael Rochlitz](https://sites.google.com/site/michaelrochlitz/), published in Comparative Political Studies (2025, Vol. 58, No. 10, pp. 2237-2265), and on data from Westwood & Lelkes (2024), [America's Political Pulse](https://americaspoliticalpulse.com/data). For the full methodology and cross-country comparisons, see the [paper](https://doi.org/10.1177/00104140241290208)._

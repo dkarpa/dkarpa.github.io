@@ -11,9 +11,9 @@ giscus_comments: false
 related_posts: false
 ---
 
-How do authoritarian regimes maintain their grip on public opinion beyond state-run media and the outright repression of journalists? One answer is surveillance. Not necessarily the kind that leads to arrests, but the kind that makes people think twice before speaking. When citizens know, or even suspect, that their online activity is monitored, they may stop expressing what they actually think. In a new paper, I test whether surveillance induces self-censorship in an autocracy and ask *who* self-censors.
+How do authoritarian regimes maintain their grip on public opinion beyond state-run media and the outright repression of journalists? One answer is surveillance. Not necessarily the kind that leads to arrests, but the kind that makes people think twice before speaking. When citizens know, or even suspect, that their online activity is monitored, they may stop expressing what they actually think. In a new paper, I test whether surveillance induces self-censorship in an autocracy and ask _who_ self-censors.
 
-There is a theoretical debate about how autocrats combine their tools. Some scholars argue that propaganda and information control *substitute* for repression: as regimes get better at shaping narratives, they need less coercion (Guriev and Treisman 2019, 2020). Others argue the opposite, that repression and information control *complement* each other (Gehlbach et al. 2022; Lamberova and Sonin 2023; Gohdes 2023). In this view, surveillance does not just gather intelligence. It signals repressive capacity, and that signal chills political speech. My experiment provides evidence for the complementarity account.
+There is a theoretical debate about how autocrats combine their tools. Some scholars argue that propaganda and information control _substitute_ for repression: as regimes get better at shaping narratives, they need less coercion (Guriev and Treisman 2019, 2020). Others argue the opposite, that repression and information control _complement_ each other (Gehlbach et al. 2022; Lamberova and Sonin 2023; Gohdes 2023). In this view, surveillance does not just gather intelligence. It signals repressive capacity, and that signal chills political speech. My experiment provides evidence for the complementarity account.
 
 ## The Experiment
 
@@ -48,7 +48,7 @@ An interflex binning analysis following Hainmueller, Mummolo, and Xu (2019) shar
     Predicted probability of answering "prefer not to answer" by treatment group and international media consumption. The surveillance effect is concentrated among citizens who consume international media. Based on avg_predictions() from the interaction model (Table 1, Column 3).
 </div>
 
-One detail makes this even more interesting. The overall association between international media consumption and self-censorship is actually negative (-12 percentage points, p<0.01). Foreign media consumers are generally *more* willing to answer questions. They are more politically engaged and more opinionated. But the surveillance treatment reverses this. The very citizens who are most willing to speak up are the ones who go quiet when surveillance becomes salient.
+One detail makes this even more interesting. The overall association between international media consumption and self-censorship is actually negative (-12 percentage points, p<0.01). Foreign media consumers are generally _more_ willing to answer questions. They are more politically engaged and more opinionated. But the surveillance treatment reverses this. The very citizens who are most willing to speak up are the ones who go quiet when surveillance becomes salient.
 
 The paper also tests whether higher education drives the effect, following the same theoretical logic (the "elite" could be defined by education rather than media access). It does not. The education interaction effects are small and not statistically significant (2.2% for non-highly educated vs. 3.9% for highly educated, p>0.1). In Kazakhstan, what defines the informed elite is not formal education but access to a diverse media environment beyond the domestic information space.
 
@@ -62,4 +62,4 @@ The results provide evidence that repression and information control complement 
 
 ---
 
-*This post is based on "Digital Surveillance and Self-Censorship in Autocracies: Evidence from a Survey Experiment in Kazakhstan" by David Karpa, published in [Political Behavior](https://link.springer.com/journal/11109).*
+_This post is based on "Digital Surveillance and Self-Censorship in Autocracies: Evidence from a Survey Experiment in Kazakhstan" by David Karpa, published in [Political Behavior](https://link.springer.com/journal/11109)._
