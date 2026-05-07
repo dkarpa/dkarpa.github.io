@@ -2,7 +2,7 @@
 layout: post
 title: "Beyond Preferences. How Respondents Actually Decide in Conjoint Experiments"
 author: David Karpa
-date: 2026-05-07 12:00:00
+date: 2026-05-07 06:00:00
 description: AMCEs are valid by design and stay deliberately silent on the decision process. My recent methods work is about that decision process, and the cjdiag R package is the tool I built for it.
 tags: research methods conjoint behavior cjdiag eba
 categories: research
