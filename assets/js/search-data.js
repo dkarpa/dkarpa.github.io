@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-surveillance-silences-the-informed-evidence-from-kazakhstan",
+        },{id: "post-beyond-preferences-how-respondents-actually-decide-in-conjoint-experiments",
+        
+          title: "Beyond Preferences. How Respondents Actually Decide in Conjoint Experiments",
+        
+        description: "AMCEs are valid by design and stay deliberately silent on the decision process. My recent methods work is about that decision process, and the cjdiag R package is the tool I built for it.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/behavior-not-preferences-conjoint-experiments/";
+          
+        },
+      },{id: "post-surveillance-silences-the-informed-evidence-from-kazakhstan",
         
           title: "Surveillance Silences the Informed: Evidence from Kazakhstan",
         
