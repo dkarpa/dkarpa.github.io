@@ -11,7 +11,7 @@ giscus_comments: false
 related_posts: false
 ---
 
-My recent methods work has been pulling in one direction. I want to know how respondents in conjoint experiments actually decide, not just what they prefer on average. Conjoints produce beautifully clean estimates of average marginal component effects (AMCEs) and marginal means, and political scientists rely on those quantities every day. Nothing in what follows says those estimates are wrong. They aren't. Yet, the AMCE is process-agnostic by design — Hainmueller, Hopkins, and Yamamoto (2014) are explicit about this — and that agnosticism is precisely what gives the estimator its robustness. The flip side is that, by construction, an AMCE tells you nothing about how the respondent in front of you got from two profiles to the one they ticked. That gap is exactly where I've been working, and `cjdiag` is the R package I built to fill it.
+Conjoints produce beautifully clean estimates of average marginal component effects (AMCEs) and marginal means, and political scientists rely on those quantities every day. Nothing in what follows says those estimates are wrong. They aren't. Yet, the AMCE is process-agnostic by design — Hainmueller, Hopkins, and Yamamoto (2014) are explicit about this — and that agnosticism is precisely what gives the estimator its robustness. The flip side is that, by construction, an AMCE tells you nothing about how the respondent in front of you got from two profiles to the one they ticked. That gap is exactly where I've been working, and `cjdiag` is the R package I built to fill it.
 
 ## A car-buying intuition
 
