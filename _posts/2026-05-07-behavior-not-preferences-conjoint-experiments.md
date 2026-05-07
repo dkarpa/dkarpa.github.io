@@ -43,7 +43,7 @@ The clearest illustration is the decision tree. Fit on the bundled Hainmueller a
   </div>
 </div>
 
-The root split is **"no plans to look for work."** A profile carrying that level is gone: predicted chosen-rate 0.35, branch terminates, no further screens. That is the conjoint analogue of "above the price cap" in the car example — a hard gate that ends the comparison before any other attribute is consulted. Among the profiles that survive the first screen, the next thing respondents check is **prior unauthorized entry**, which drops chosen-rate from 0.58 to 0.42. Profiles that clear that screen are then evaluated on **education**, where a college degree pushes chosen-rate to 0.71. Only deeper in the tree do softer attributes like **language ability** start to act as tiebreakers within particular branches.
+The root split is **"no plans to look for work."** A profile carrying that level is gone (on average): predicted chosen-rate 0.35, branch terminates, no further screens. That is the conjoint analogue of "above the price cap" in the car example — a hard gate that ends the comparison before any other attribute is consulted. Among the profiles that survive the first screen, the next thing respondents check is **prior unauthorized entry**, which drops chosen-rate from 0.58 to 0.42. Profiles that clear that screen are then evaluated on **education**, where a college degree pushes chosen-rate to 0.71. Only deeper in the tree do softer attributes like **language ability** start to act as tiebreakers within particular branches.
 
 What's striking is what's missing. Country of origin, gender, profession, application reason, job experience — none of these enter the tree at all. The design varied them, but in this analysis they didn't reach the threshold to gate any decision. AMCEs will still produce coefficients for each of them, and those coefficients are perfectly valid AMCEs. They just don't tell you that the choice was effectively settled before respondents got to the attributes those coefficients describe.
 
@@ -63,7 +63,7 @@ cjdiag is one piece of a broader project to take the behavioral content of conjo
 
 Each is a different angle on the same underlying claim: the choice was produced by a process, that process was hierarchical, and the hierarchy is recoverable from the data we already collect. There is independent validation for this from eye-tracking. The levels respondents fixate on first in a conjoint task (Jenke et al. 2021) are the same ones the tree puts at the root.
 
-A steep hierarchy is not a sign of a broken design. It is evidence that the design successfully activated a strong, structured preference, and surfacing that structure is what `cjdiag` is for. The car shopper who refuses to look at anything above their budget isn't being irrational. They're being efficient. When we analyze their choices, our job is to notice that the budget was the gate and to report it that way, alongside the AMCEs that quantify the average pull of everything that survived it.
+A steep hierarchy is evidence that the design successfully activated a strong, structured preference. Surfacing that structure is what `cjdiag` is for. The car shopper who refuses to look at anything above their budget isn't being irrational. They're being efficient. When we analyze their choices, our job is to notice that the budget was the gate and to report it that way, alongside the AMCEs that quantify the average pull of everything that survived it.
 
 ---
 
