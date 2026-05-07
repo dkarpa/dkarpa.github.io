@@ -84,7 +84,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-cjdiag-diagnostic-tools-for-conjoint-survey-experiments",
           title: 'cjdiag — Diagnostic Tools for Conjoint Survey Experiments',
-          description: "An R package that diagnoses how respondents actually decide in conjoint experiments — which attribute levels gate choices, which respondents ignore, and in what order levels settle decisions.",
+          description: "An R package that recovers the decision process AMCEs are agnostic about by design. Which attribute levels gate choices, which respondents ignore, and in what order levels settle decisions.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/cjdiag/";
             },},{id: "projects-algorithmic-governance-institutional-gaps-and-political-control-in-central-asia",
