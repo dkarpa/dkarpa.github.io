@@ -25,7 +25,7 @@ What people actually do is closer to this.
 2. **Avoid red flags.** Inside the budget, certain features are deal-breakers. Heavy accident history? Pass. Wrong fuel type for your commute? Pass. A color you simply will not be seen in? Pass. Each red flag eliminates the alternative outright, with no trade-off across features.
 3. **Compare what survives.** Only after the screens have done their work do mileage, equipment, and the small stuff actually get weighed against each other.
 
-This is **elimination by aspects** in the sense of Tversky (1972). Picture the snack aisle at a kiosk. You are mildly hungry, mildly cheap, and allergic to peanuts. Instead of scoring every item on a 1–10 scale, you throw out everything with peanuts, then everything above €2.50, and then from whatever survives you grab the one you actually like. Each step locks onto a single *aspect* (peanut content, price, taste) and eliminates anything that fails it. The choice is produced by a sequence of cuts. No partial scores get added up. Tversky's contribution was to show that this informal procedure has a clean probabilistic structure. The chance that you screen on any given aspect first is proportional to how much you care about it. Conjoint respondents do roughly the same thing, and `cjdiag` is built to recover the order of cuts.
+This is **elimination by aspects** in the sense of Tversky (1972). Picture the snack aisle at a kiosk. You are mildly hungry, mildly cheap, and allergic to peanuts. Instead of scoring every item on a 1–10 scale, you throw out everything with peanuts, then everything above €2.50, and then from whatever survives you grab the one you actually like. Each step locks onto a single _aspect_ (peanut content, price, taste) and eliminates anything that fails it. The choice is produced by a sequence of cuts. No partial scores get added up. Tversky's contribution was to show that this informal procedure has a clean probabilistic structure. The chance that you screen on any given aspect first is proportional to how much you care about it. Conjoint respondents do roughly the same thing, and `cjdiag` is built to recover the order of cuts.
 
 ## Why this matters for survey experiments
 
@@ -41,7 +41,7 @@ This matters in three concrete ways.
 
 ## What cjdiag does about it
 
-The [`cjdiag`](/projects/cjdiag/) package is built around this distinction. It runs alongside `cjoint` or `cregg`. Keep your AMCEs and add a second layer that recovers the decision *structure*.
+The [`cjdiag`](/projects/cjdiag/) package is built around this distinction. It runs alongside `cjoint` or `cregg`. Keep your AMCEs and add a second layer that recovers the decision _structure_.
 
 The decision tree is the most direct illustration. Fit on the bundled Hainmueller and Hopkins (2015) immigration data, the tree reads like a sequence of red flags.
 
@@ -64,10 +64,10 @@ cjdiag is one piece of a broader project to take the behavioral content of conjo
 - `forest`, which levels actually move predictions (Mean Decrease in Accuracy, Breiman 2001)
 - `tree`, the hierarchy of screens, as above
 - `crt`, which levels survive a strict signal-vs-noise test (Ham, Imai and Janson 2024)
-- `nmm`, the *order* in which levels settle choices (Dill, Howlett and Müller-Crepon 2024)
+- `nmm`, the _order_ in which levels settle choices (Dill, Howlett and Müller-Crepon 2024)
 - `marginal_r2`, how much of each individual respondent's variance any single attribute explains (Jenke et al. 2021)
 
-Each method is a different angle on the same underlying claim. The choice was produced by a process, that process was hierarchical, and the hierarchy is recoverable from the data we already collect. The companion paper, *Beyond the AMCE. Diagnosing Importance Hierarchies in Conjoint Experiments*, lays out the theory and validates it against eye-tracking data from Jenke et al. (2021), where the levels respondents fixate on first are also the ones the tree puts at the root.
+Each method is a different angle on the same underlying claim. The choice was produced by a process, that process was hierarchical, and the hierarchy is recoverable from the data we already collect. The companion paper, _Beyond the AMCE. Diagnosing Importance Hierarchies in Conjoint Experiments_, lays out the theory and validates it against eye-tracking data from Jenke et al. (2021), where the levels respondents fixate on first are also the ones the tree puts at the root.
 
 A steep hierarchy does not signal a failure of the conjoint design. It shows that the design activated a strong, structured preference. Surfacing that structure is what `cjdiag` is for.
 
@@ -75,15 +75,15 @@ The car shopper who refuses to look at anything above their budget is being effi
 
 ---
 
-*The `cjdiag` R package is available at [github.com/dkarpa/cjdiag](https://github.com/dkarpa/cjdiag) with documentation at [dkarpa.github.io/cjdiag](https://dkarpa.github.io/cjdiag/). Development is supported by the ERC project AGAPP (PI: Prof. Daria Gritsenko).*
+_The `cjdiag` R package is available at [github.com/dkarpa/cjdiag](https://github.com/dkarpa/cjdiag) with documentation at [dkarpa.github.io/cjdiag](https://dkarpa.github.io/cjdiag/). Development is supported by the ERC project AGAPP (PI: Prof. Daria Gritsenko)._
 
 ## References
 
-- Breiman, L. (2001). [Random Forests](https://doi.org/10.1023/A:1010933404324). *Machine Learning*, 45(1), 5–32.
-- Dill, J., Howlett, M., and Müller-Crepon, C. (2024). [At Any Cost: How Ukrainians Think about Self-Defense Against Russia](https://doi.org/10.1111/ajps.12832). *American Journal of Political Science*, 68(4), 1460–1478.
-- Hainmueller, J., Hopkins, D. J., and Yamamoto, T. (2014). [Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments](https://doi.org/10.1093/pan/mpt024). *Political Analysis*, 22(1), 1–30.
-- Hainmueller, J., and Hopkins, D. J. (2015). [The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants](https://doi.org/10.1111/ajps.12138). *American Journal of Political Science*, 59(3), 529–548.
-- Ham, D. W., Imai, K., and Janson, L. (2024). [Using Machine Learning to Test Causal Hypotheses in Conjoint Analysis](https://doi.org/10.1017/pan.2023.41). *Political Analysis*, 32, 329–344.
-- Jenke, L., Bansak, K., Hainmueller, J., and Hangartner, D. (2021). [Using Eye-Tracking to Understand Decision-Making in Conjoint Experiments](https://doi.org/10.1017/pan.2020.11). *Political Analysis*, 29(1), 75–101.
-- Tversky, A. (1972). [Elimination by Aspects: A Theory of Choice](https://doi.org/10.1037/h0032955). *Psychological Review*, 79(4), 281–299.
-- Tversky, A., and Sattath, S. (1979). [Preference Trees](https://doi.org/10.1037/0033-295X.86.6.542). *Psychological Review*, 86(6), 542–573.
+- Breiman, L. (2001). [Random Forests](https://doi.org/10.1023/A:1010933404324). _Machine Learning_, 45(1), 5–32.
+- Dill, J., Howlett, M., and Müller-Crepon, C. (2024). [At Any Cost: How Ukrainians Think about Self-Defense Against Russia](https://doi.org/10.1111/ajps.12832). _American Journal of Political Science_, 68(4), 1460–1478.
+- Hainmueller, J., Hopkins, D. J., and Yamamoto, T. (2014). [Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments](https://doi.org/10.1093/pan/mpt024). _Political Analysis_, 22(1), 1–30.
+- Hainmueller, J., and Hopkins, D. J. (2015). [The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants](https://doi.org/10.1111/ajps.12138). _American Journal of Political Science_, 59(3), 529–548.
+- Ham, D. W., Imai, K., and Janson, L. (2024). [Using Machine Learning to Test Causal Hypotheses in Conjoint Analysis](https://doi.org/10.1017/pan.2023.41). _Political Analysis_, 32, 329–344.
+- Jenke, L., Bansak, K., Hainmueller, J., and Hangartner, D. (2021). [Using Eye-Tracking to Understand Decision-Making in Conjoint Experiments](https://doi.org/10.1017/pan.2020.11). _Political Analysis_, 29(1), 75–101.
+- Tversky, A. (1972). [Elimination by Aspects: A Theory of Choice](https://doi.org/10.1037/h0032955). _Psychological Review_, 79(4), 281–299.
+- Tversky, A., and Sattath, S. (1979). [Preference Trees](https://doi.org/10.1037/0033-295X.86.6.542). _Psychological Review_, 86(6), 542–573.

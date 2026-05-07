@@ -12,7 +12,7 @@ related_publications: false
 
 Standard conjoint analysis tools (`cjoint`, `cregg`) estimate Average Marginal Component Effects (AMCEs), the causal effect of changing a single attribute level. AMCEs are valid and process-agnostic by design (Hainmueller, Hopkins, and Yamamoto 2014). They tell you what respondents prefer on average. They are deliberately silent on how respondents reach the choice, which attribute levels they actually attend to, which ones they ignore, and in what order they process information.
 
-**cjdiag** is the tool I built to fill that gap. It works at the level of individual *attribute levels* rather than aggregated attributes, because the specific level (e.g., "no plans to look for work" rather than "Job Plans" as a whole) is what triggers respondent decisions.
+**cjdiag** is the tool I built to fill that gap. It works at the level of individual _attribute levels_ rather than aggregated attributes, because the specific level (e.g., "no plans to look for work" rather than "Job Plans" as a whole) is what triggers respondent decisions.
 
 The package complements `cjoint` and `cregg`. Run those for AMCEs, then run `cjdiag` to recover the decision process AMCEs leave on the table.
 
@@ -20,13 +20,13 @@ The package complements `cjoint` and `cregg`. Run those for AMCEs, then run `cjd
 
 All methods are accessed through a single function, `cj_fit(formula, data, method)`.
 
-| Estimand | `method =` | Question | When to use |
-|----------|-----------|----------|-------------|
-| **Level importance** | `"forest"` | Which attribute levels matter most? | Default. Always fit this first. |
-| **Decision structure** | `"tree"` | How do respondents structure their decisions? | When you suspect a gatekeeper. |
-| **Level attendance** | `"crt"` | Which levels survive a strict signal-vs-noise test? | When you want a hard attendance test. |
-| **Decision order** | `"nmm"` | In what order do levels settle choices? | When you care about the decision order. |
-| **Individual attendance** | `"marginal_r2"` | Which attributes did each respondent actually use? | When you want individual-level heterogeneity. |
+| Estimand                  | `method =`      | Question                                            | When to use                                   |
+| ------------------------- | --------------- | --------------------------------------------------- | --------------------------------------------- |
+| **Level importance**      | `"forest"`      | Which attribute levels matter most?                 | Default. Always fit this first.               |
+| **Decision structure**    | `"tree"`        | How do respondents structure their decisions?       | When you suspect a gatekeeper.                |
+| **Level attendance**      | `"crt"`         | Which levels survive a strict signal-vs-noise test? | When you want a hard attendance test.         |
+| **Decision order**        | `"nmm"`         | In what order do levels settle choices?             | When you care about the decision order.       |
+| **Individual attendance** | `"marginal_r2"` | Which attributes did each respondent actually use?  | When you want individual-level heterogeneity. |
 
 ## Example output
 
@@ -85,14 +85,14 @@ pak::pak("dkarpa/cjdiag")
 
 ## References
 
-- Breiman, L. (2001). [Random Forests](https://doi.org/10.1023/A:1010933404324). *Machine Learning*, 45(1), 5–32.
-- Dill, J., Howlett, M., and Müller-Crepon, C. (2024). [At Any Cost: How Ukrainians Think about Self-Defense Against Russia](https://doi.org/10.1111/ajps.12832). *American Journal of Political Science*, 68(4), 1460–1478.
-- Hainmueller, J., Hopkins, D. J., and Yamamoto, T. (2014). [Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments](https://doi.org/10.1093/pan/mpt024). *Political Analysis*, 22(1), 1–30.
-- Hainmueller, J., and Hopkins, D. J. (2015). [The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants](https://doi.org/10.1111/ajps.12138). *American Journal of Political Science*, 59(3), 529–548.
-- Ham, D. W., Imai, K., and Janson, L. (2024). [Using Machine Learning to Test Causal Hypotheses in Conjoint Analysis](https://doi.org/10.1017/pan.2023.41). *Political Analysis*, 32, 329–344.
-- Jenke, L., Bansak, K., Hainmueller, J., and Hangartner, D. (2021). [Using Eye-Tracking to Understand Decision-Making in Conjoint Experiments](https://doi.org/10.1017/pan.2020.11). *Political Analysis*, 29(1), 75–101.
-- Tversky, A. (1972). [Elimination by Aspects: A Theory of Choice](https://doi.org/10.1037/h0032955). *Psychological Review*, 79(4), 281–299.
-- Tversky, A., and Sattath, S. (1979). [Preference Trees](https://doi.org/10.1037/0033-295X.86.6.542). *Psychological Review*, 86(6), 542–573.
+- Breiman, L. (2001). [Random Forests](https://doi.org/10.1023/A:1010933404324). _Machine Learning_, 45(1), 5–32.
+- Dill, J., Howlett, M., and Müller-Crepon, C. (2024). [At Any Cost: How Ukrainians Think about Self-Defense Against Russia](https://doi.org/10.1111/ajps.12832). _American Journal of Political Science_, 68(4), 1460–1478.
+- Hainmueller, J., Hopkins, D. J., and Yamamoto, T. (2014). [Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments](https://doi.org/10.1093/pan/mpt024). _Political Analysis_, 22(1), 1–30.
+- Hainmueller, J., and Hopkins, D. J. (2015). [The Hidden American Immigration Consensus: A Conjoint Analysis of Attitudes toward Immigrants](https://doi.org/10.1111/ajps.12138). _American Journal of Political Science_, 59(3), 529–548.
+- Ham, D. W., Imai, K., and Janson, L. (2024). [Using Machine Learning to Test Causal Hypotheses in Conjoint Analysis](https://doi.org/10.1017/pan.2023.41). _Political Analysis_, 32, 329–344.
+- Jenke, L., Bansak, K., Hainmueller, J., and Hangartner, D. (2021). [Using Eye-Tracking to Understand Decision-Making in Conjoint Experiments](https://doi.org/10.1017/pan.2020.11). _Political Analysis_, 29(1), 75–101.
+- Tversky, A. (1972). [Elimination by Aspects: A Theory of Choice](https://doi.org/10.1037/h0032955). _Psychological Review_, 79(4), 281–299.
+- Tversky, A., and Sattath, S. (1979). [Preference Trees](https://doi.org/10.1037/0033-295X.86.6.542). _Psychological Review_, 86(6), 542–573.
 
 ## Funding
 
