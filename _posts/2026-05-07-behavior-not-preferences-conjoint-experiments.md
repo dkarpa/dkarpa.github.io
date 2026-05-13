@@ -1,41 +1,54 @@
 ---
 layout: post
-title: "Beyond Preferences. How Respondents Actually Decide in Conjoint Experiments"
+title: "Which Attributes Do Conjoint Respondents Actually Use? A Diagnostic"
 author: David Karpa
 date: 2026-05-07 06:00:00
-description: AMCEs are valid by design and stay deliberately silent on the decision process. My recent methods work is about that decision process, and the cjdiag R package is the tool I built for it.
+description: AMCEs are valid by design and stay deliberately silent on which attributes respondents used. cjdiag reads a population-level attendance signal off the same choice data, validated against eye-tracking.
 tags: research methods conjoint behavior cjdiag eba
 categories: research
-thumbnail: assets/img/cjdiag_tree.png
+thumbnail: assets/img/cjdiag_rank.png
 giscus_comments: false
 related_posts: false
+published: false
 ---
 
-Conjoints produce beautifully clean estimates of average marginal component effects (AMCEs) and marginal means, and political scientists rely on those quantities every day. Nothing in what follows says those estimates are wrong. They aren't. Yet, the AMCE is process-agnostic by design — Hainmueller, Hopkins, and Yamamoto (2014) are explicit about this — and that agnosticism is precisely what gives the estimator its robustness. The flip side is that, by construction, an AMCE tells you nothing about how the respondent in front of you got from two profiles to the one they ticked. That gap is exactly where I've been working, and `cjdiag` is the R package I built to fill it.
+> **Draft — taken offline for revision.** This is a working draft kept in the repo while the framing is reworked. It is not currently rendered on the site (`published: false` in the front matter).
 
-## A car-buying intuition
+Conjoints produce clean estimates of average marginal component effects (AMCEs) and marginal means, and political scientists rely on those quantities every day. The AMCE is a precise, randomization-identified average effect, and Hainmueller, Hopkins, and Yamamoto (2014) are explicit that it makes no behavioural assumption. `cjdiag` adds a separate, descriptive quantity to the same data: for any given conjoint, how concentrated is the predictive signal across attribute levels — that is, do some levels carry most of the discriminating information in the choice data while others carry essentially none? This post is about what that descriptive reading buys you, and why it took a new estimator to make it available on standard 5–10-task conjoints rather than only on the long ones.
 
-Think about the last time you actually bought a car, or even seriously considered it. The textbook microeconomic story is that you formed a utility function over price, fuel economy, brand, color, mileage, accident history, and so on, weighted each attribute, summed up the contributions for every car on offer, and picked the one with the highest score. That is not how anyone shops for a car. What people actually do looks more like a sequence of cuts:
+## A simple intuition
 
-1. **Fix a price category.** Anything above your budget is invisible. A €40,000 SUV doesn't enter the comparison even if it's the best car on the lot, because you never look at it. The price band is a hard gate, not one factor among many.
-2. **Avoid red flags.** Inside the budget, certain features are deal-breakers and trigger an immediate pass. Heavy accident history. Wrong fuel type for your commute. A color you simply will not be seen in. Each of these eliminates the alternative on its own; nothing else about the car gets weighed against them.
-3. **Compare what survives.** Only after the screens have done their work do mileage, equipment, and the small stuff actually get traded off against each other.
+Picture the snack aisle at a kiosk. You're mildly hungry, mildly cheap, allergic to peanuts. You don't score every item out of ten. You toss out anything with peanuts, then anything over €2.50, then from whatever is left you grab what looks tastiest. Tversky (1972) wrote down one formal version of this kind of decision and called it _elimination by aspects_. Whether respondents in a conjoint do anything literally like that is not something choice data alone can tell us — Tversky and Sattath (1979) showed that several different rules can produce indistinguishable choice probabilities, and that result still holds. But these decisions do leave a recognizable signature in aggregate data: a few attributes carry most of the discriminating information, others carry very little. That signature is what `cjdiag` summarises. It does not identify the rule.
 
-Tversky (1972) called this _elimination by aspects_. Picture the snack aisle at a kiosk: you're mildly hungry, mildly cheap, allergic to peanuts. You don't score every item out of ten. You throw out everything with peanuts, then everything over €2.50, and from whatever is left you grab what looks tastiest. Each step locks onto one _aspect_ — peanut content, price, taste — and eliminates everything that fails it. Tversky showed that this informal procedure has a clean probabilistic structure: the chance that you screen on a given aspect first is proportional to how much you care about it. Conjoint respondents do roughly the same thing when they look at two profiles, and `cjdiag` is what I use to recover the order of their screens.
+## What cjdiag adds
 
-## Why this matters for survey experiments
+The AMCE answers one question precisely: on average across respondents, how much does flipping this level shift the chosen-rate? That is exactly the quantity researchers want when reporting which levels move choice in the population. `cjdiag` adds a second, descriptive question to the same data: in this dataset, how concentrated is the predictive signal across levels? If a small number of levels carry most of the discriminating information and several others carry very little, that is a fact about the data worth reporting alongside the AMCEs. It is not a claim that respondents executed any particular rule — choice data, as noted, do not pin down the rule — but it is a useful summary of where the signal sits.
 
-A conjoint task asks the respondent to pick the better of two profiles described by 5–10 attributes, and the standard analysis treats that answer as if they had quietly added up partial utilities behind the scenes. The AMCE answers one question very well: on average, how much does flipping this one level shift the chosen-rate? It is silent on a different one by design: did respondents actually weigh this attribute, or did they settle the choice on something else and never look at it?
+There is one place where this descriptive summary connects to a long-running concern in the literature. Tversky (1972) raised the question of whether respondents in multi-attribute choice are using all the attributes at all, or whether some are effectively skipped. The choice-data answer is: we cannot identify "true non-attendance" cleanly from a "very small preference," because both produce the same near-zero signal. Under the kind of decision rule Tversky described, these two cases are also substantively the same — the attribute is not driving the choice either way. So the working question becomes the simpler one: does the level carry meaningful signal in the population? That is the question `cjdiag` is designed to answer.
 
-When respondents in an immigration conjoint see "no plans to look for work," they don't down-weight that profile. They eliminate it — on average. The other six attributes barely enter the comparison for that pair. The AMCE will still recover an average effect — it averages across respondents who behaved that way and respondents who didn't, across pairs where the level appeared and pairs where it didn't — and that average is correct on its own terms. It just doesn't tell you how the choice was actually reached.
+## Why between-subject
 
-That has three concrete consequences for survey experiments. The first is that **non-attendance is invisible to AMCEs**. If half your respondents ignore an attribute entirely, the AMCE for that attribute averages real preferences with pure noise. The estimate comes out small, and a reader will naturally interpret it as a weak preference, when the actual story may be that many respondents never looked at the attribute at all. Both stories are consistent with the same AMCE, and the AMCE alone can't separate them. The second is that **the hierarchy is invisible to marginal means**. Marginal means tell you the chosen-rate at each level, but they can't tell you that one level acted as a gate while every other attribute was a tiebreaker among the survivors. Two designs with identical marginal means can imply very different decision processes. The third is that **external validity depends on the process**. Whether a conjoint result transports to real-world behavior depends on whether the real-world choice is also dominated by the same red flags. If respondents in a survey screen on price and ignore fuel type while real shoppers do the reverse, AMCEs alone won't catch the mismatch.
+There are existing tools for attribute non-attendance — latent-class ANA models, nested marginal means, per-respondent $R^2$ from ratings — and they recover respondent-specific attention weights. The price is that they need many tasks per respondent, typically 20 or more, before within-subject estimation has enough leverage. That cognitive load almost certainly changes how respondents decide: fixation coverage drops over tasks, satisficing rises with task load. What within-subject ANA tools identify is plausibly the non-attendance induced by long task batteries, not the attendance that operates in a standard 5–10-task conjoint. The published literature sits at 5–10 tasks. `cjdiag` reads attendance off between-subject variation in choice plus the design, so it applies to conjoints of any length — including most of the ones we already have data for.
 
-## What cjdiag does about it
+## The HierNet / CRT estimator
 
-The [`cjdiag`](/projects/cjdiag/) package is built around exactly this distinction. It runs alongside `cjoint` or `cregg` rather than replacing them — keep your AMCEs and add a second layer that recovers the decision structure underneath them.
+The estimator the rest of this post leads with is HierNet, the L1-regularised hierarchy-constrained logistic regression of Bien and Tibshirani (2013), wrapped in the conditional randomisation test of Ham, Imai and Janson (2024). It is a between-subject estimator that asks, for each attribute level, the simplest possible version of the descriptive question: does the coefficient survive a strict penalty on model complexity? Levels whose coefficients get shrunk to exactly zero at modest penalty levels are levels for which the choice data, after accounting for everything else, carry no meaningful population-level signal.
 
-The clearest illustration is the decision tree. Fit on the bundled Hainmueller and Hopkins (2015) immigration data, the tree reads almost literally as a sequence of red-flag screens.
+The output is a regularisation path: as the penalty $\lambda$ increases, more coefficients get shrunk to zero, and the order in which they drop out is the descriptive ranking we want. The level that survives the longest is the one the choice data most insist on; the levels that drop out first are the ones the data are silent about. The path is read at the cross-validated $\lambda^{\!*}$ for the binary attendance flag, and across the whole path for a continuous robustness ranking.
+
+<div class="row justify-content-sm-center">
+  <div class="col-sm-12 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/cjdiag_rank.png" title="cjdiag CRT survival ranking, Hainmueller and Hopkins (2015) immigration conjoint" class="img-fluid rounded z-depth-1" %}
+  </div>
+</div>
+
+Two things to read off the picture. First, the ordering: a small subset of levels carries the bulk of the discriminating information in the choice data. Second, the tail: several levels drop out of the path almost immediately, which is the choice-data fingerprint of either non-attendance or a preference too small for the data to resolve — the two being substantively the same here.
+
+Why HierNet specifically. We want the answer to "is this level carrying signal?" to be robust to small changes in specification — random forest importance can be noisy at the bottom of the ranking, and lasso-style penalisation gives a cleaner zero / non-zero readout. The hierarchy constraint (an interaction can only enter if both main effects do) is what lets the same machinery report interaction-level attendance without losing identifiability when many parameters are zero. None of this requires more than a handful of tasks per respondent.
+
+## A second view: the decision tree
+
+The same data fit with a decision tree gives a more readable picture of where the signal sits, at the cost of being a single-sample summary.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -43,27 +56,25 @@ The clearest illustration is the decision tree. Fit on the bundled Hainmueller a
   </div>
 </div>
 
-The root split is **"no plans to look for work."** A profile carrying that level is gone (on average): predicted chosen-rate 0.35, branch terminates, no further screens. That is the conjoint analogue of "above the price cap" in the car example — a hard gate that ends the comparison before any other attribute is consulted. Among the profiles that survive the first screen, the next thing respondents check is **prior unauthorized entry**, which drops chosen-rate from 0.58 to 0.42. Profiles that clear that screen are then evaluated on **education**, where a college degree pushes chosen-rate to 0.71. Only deeper in the tree do softer attributes like **language ability** start to act as tiebreakers within particular branches.
+The root split is **"no plans to look for work."** A profile carrying that level is rarely chosen on average: predicted chosen-rate 0.35, branch terminates, no further splits in this subtree. Among the profiles that clear that split, the next variable the tree picks up is **prior unauthorized entry**, dropping chosen-rate from 0.58 to 0.42. Profiles that clear that are then split on **education**, where a college degree pushes chosen-rate to 0.71. Only deeper in the tree do softer attributes like **language ability** appear.
 
-What's striking is what's missing. Country of origin, gender, profession, application reason, job experience — none of these enter the tree at all. The design varied them, but in this analysis they didn't reach the threshold to gate any decision. AMCEs will still produce coefficients for each of them, and those coefficients are perfectly valid AMCEs. They just don't tell you that the choice was effectively settled before respondents got to the attributes those coefficients describe.
+What's striking is what's missing. Country of origin, gender, profession, application reason, job experience — none of these enter the tree at all. The design varied them, but they did not carry enough predictive signal to be selected as a split. AMCEs still estimate coefficients for each, and those coefficients are perfectly valid AMCEs. The tree just adds a second descriptive fact: in this dataset, those attributes contributed little to the population-level predictive signal — the same pattern the CRT path shows from a different angle.
 
-So instead of asking what the average pull of each level is, the tree asks what the **order of the screens** is. The first question is about preferences. The second is about behavior. They are complementary, not competing.
+One caveat: a single decision tree is heavily overfit to its sample, which is why `cjdiag` also fits a random forest in the background. The tree picture is the most readable summary; the importance numbers come from the forest.
 
-One caveat. A single decision tree is, of course, heavily overfit to the particular sample it was grown on, which is why `cjdiag` actually estimates a random forest in the background, growing hundreds of trees and learning from each. The tree picture above is the most readable summary of the structure, but the level-importance numbers and the gatekeeper diagnostics come from the forest, not from this one tree.
+## The other methods
 
-## What I am building toward
+The package exposes five methods through `cj_fit()`, each summarising the predictive-signal distribution in a slightly different way:
 
-cjdiag is one piece of a broader project to take the behavioral content of conjoint data seriously. The package exposes five complementary methods through `cj_fit()`:
+- `crt` reports which levels retain non-zero coefficients along the HierNet L1-regularised path (Ham, Imai and Janson 2024). The lead estimator above.
+- `forest` summarises how much each level contributes to out-of-sample predictive accuracy, via Mean Decrease in Accuracy (Breiman 2001).
+- `tree` displays the order in which levels split the data, as above.
+- `nmm` reports the order in which levels separate choices in a nested aggregation (Dill, Howlett and Müller-Crepon 2024).
+- `marginal_r2` reports per-respondent $R^2$ from regressing choice on each attribute alone (Jenke et al. 2021).
 
-- `forest` recovers which levels actually move predictions, via Mean Decrease in Accuracy (Breiman 2001).
-- `tree` shows the hierarchy of screens, as above.
-- `crt` tests which levels survive a strict signal-vs-noise penalty (Ham, Imai and Janson 2024).
-- `nmm` recovers the order in which levels settle choices (Dill, Howlett and Müller-Crepon 2024).
-- `marginal_r2` reports how much of an individual respondent's choice variance one attribute explains on its own (Jenke et al. 2021).
+Each method reads attendance from a different angle. Where they agree, the population-level reading is robust to learner choice; where they disagree, the level deserves a closer look. There is independent validation from eye-tracking: in the Jenke et al. (2021) data, the levels respondents fixate on most are the ones the CRT and the forest both put at the top.
 
-Each is a different angle on the same underlying claim: the choice was produced by a process, that process was hierarchical, and the hierarchy is recoverable from the data we already collect. There is independent validation for this from eye-tracking. The levels respondents fixate on first in a conjoint task (Jenke et al. 2021) are the same ones the tree puts at the root.
-
-A steep hierarchy is evidence that the design successfully activated a strong, structured preference. Surfacing that structure is what `cjdiag` is for. The car shopper who refuses to look at anything above their budget isn't being irrational. They're being efficient. When we analyze their choices, our job is to notice that the budget was the gate and to report it that way, alongside the AMCEs that quantify the average pull of everything that survived it.
+The aim is not to displace AMCEs but to put a second layer of description next to them: a population-level attendance reading, validated against eye-tracking on the datasets where both are available, that you can compute on conjoints we already have.
 
 ---
 
@@ -71,6 +82,7 @@ _The `cjdiag` R package is available at [github.com/dkarpa/cjdiag](https://githu
 
 ## References
 
+- Bien, J., Taylor, J., and Tibshirani, R. (2013). [A Lasso for Hierarchical Interactions](https://doi.org/10.1214/13-AOS1096). _Annals of Statistics_, 41(3), 1111–1141.
 - Breiman, L. (2001). [Random Forests](https://doi.org/10.1023/A:1010933404324). _Machine Learning_, 45(1), 5–32.
 - Dill, J., Howlett, M., and Müller-Crepon, C. (2024). [At Any Cost: How Ukrainians Think about Self-Defense Against Russia](https://doi.org/10.1111/ajps.12832). _American Journal of Political Science_, 68(4), 1460–1478.
 - Hainmueller, J., Hopkins, D. J., and Yamamoto, T. (2014). [Causal Inference in Conjoint Analysis: Understanding Multidimensional Choices via Stated Preference Experiments](https://doi.org/10.1093/pan/mpt024). _Political Analysis_, 22(1), 1–30.
