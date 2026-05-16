@@ -9,10 +9,8 @@ categories: research
 thumbnail: assets/img/cjdiag_crt_pval.png
 giscus_comments: false
 related_posts: false
-published: false
+published: true
 ---
-
-> **Draft.** This post is kept in the repository as a working draft (`published: false`) and is not currently rendered on the site.
 
 Conjoint experiments randomise multi-attribute profiles and ask respondents to choose between them. The standard output is the average marginal component effect (AMCE), the average change in chosen-rate when one attribute level is flipped. The AMCE is identified by the design's randomisation, and Hainmueller, Hopkins, and Yamamoto (2014) are explicit that it rests on no behavioural assumption. It is the right quantity for the question it answers.
 
