@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-surveillance-silences-the-informed-evidence-from-kazakhstan",
+        },{id: "post-a-formal-test-for-attribute-attendance-in-conjoint-experiments",
+        
+          title: "A Formal Test for Attribute Attendance in Conjoint Experiments",
+        
+        description: "cjdiag adds a between-subject test for attribute attendance for standard conjoint experiment, with a p-value per level, validated against eye-tracking.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/behavior-not-preferences-conjoint-experiments/";
+          
+        },
+      },{id: "post-surveillance-silences-the-informed-evidence-from-kazakhstan",
         
           title: "Surveillance Silences the Informed: Evidence from Kazakhstan",
         
