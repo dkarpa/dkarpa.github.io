@@ -15,6 +15,16 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+<h2 class="bibliography">Books and book chapters</h2>
+
+{% bibliography --group_by none --query @*[category=book] %}
+
+<h2 class="bibliography">Journal articles</h2>
+
+{% bibliography --group_by none --query @*[category=journal] %}
+
+<h2 class="bibliography">Working papers</h2>
+
+{% bibliography --group_by none --query @*[category=working_paper] %}
 
 </div>
