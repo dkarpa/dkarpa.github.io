@@ -41,7 +41,7 @@ Technical University of Munich, where I work in the ERC-funded project
 In 2025, I was a postdoctoral researcher at the
 <a href="https://www.helsinki.fi/en/networks/centre-social-data-science">Centre for Social Data Science (CSDS)</a>
 at the University of Helsinki.
-In 2024, I served as an adjunct professor at
+In 2024, I served as a lecturer at
 <a href="https://www.kimep.kz/college-of-social-sciences/kz/">KIMEP University</a>
 and completed my doctorate at the University of Bremen.
 My dissertation received the
