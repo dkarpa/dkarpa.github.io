@@ -25,7 +25,7 @@ latest_posts:
   limit: 3
 ---
 
-I'm David Karpa, a political economist studying public attitudes, political psychology, and political behavior.
+I'm David Karpa, a political economist studying public attitudes and political behavior.
 My current research asks how people make sense of automation in public administration,
 and how economic inequality and insecurity contribute to processes of autocratisation.
 Across both lines of inquiry, I use mixed empirical methods to analyze how technological and economic change reshape the relationship between citizens and the state at the micro level.

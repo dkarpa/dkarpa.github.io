@@ -10,11 +10,11 @@ related_publications: false
 
 ## What cjdiag does
 
-Standard conjoint analysis tools (`cjoint`, `cregg`) estimate Average Marginal Component Effects (AMCEs), the causal effect of changing a single attribute level. The AMCE is identified by the design's randomisation and, as Hainmueller, Hopkins, and Yamamoto (2014) note, rests on no behavioural assumption. It answers a clear question: on average, how much does flipping a level shift the chosen-rate.
+Standard conjoint analysis tools (`cjoint`, `cregg`) estimate Average Marginal Component Effects (AMCEs), the causal effect of changing a single attribute level. The AMCE is identified by the design's randomisation and, as Hainmueller, Hopkins, and Yamamoto (2014) note, rests on no behavioral assumption. It answers a clear question: on average, how much does flipping a level shift the probability of being chosen?
 
-It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and were close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases.
+It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and were close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases. In cases where there is strong hetereogeneity, an AMCE might also look very small or non-existent. Consider questions where young and old respondents disagree. 
 
-**cjdiag** adds a quantity that separates them: Average Effective Attendance (AEA), a between-subject test of whether an attribute level carries population-level signal in the choice data. The output is a p-value per level. cjdiag is a complement to `cjoint` and `cregg`, not a replacement: run those for AMCEs and marginal means, then run cjdiag for the attendance reading on the same data.
+**cjdiag** adds a quantity that separates them: Average Effective Attendance (AEA), a between-subject test of whether an attribute level carries population-level signal in the choice data. The output is a p-value per level (see crt section below). cjdiag is a complement to `cjoint` and `cregg`, not a replacement: run those for AMCEs and marginal means, then run cjdiag for effective attendance on the same data.
 
 It works at the level of individual attribute levels rather than aggregated attributes, because whether a level carries signal depends on the specific level the researcher chose ("no plans to look for work" rather than "Job Plans" as a whole).
 
@@ -36,7 +36,7 @@ The `crt` method is the one to report for an attendance verdict; the others read
 
 `crt` fits an L1-penalised logistic regression (HierNet; Bien, Taylor, and Tibshirani 2013) of the choice on every attribute-level dummy, and reads two quantities off the regularisation path.
 
-The **λ-survival path** orders the levels. As the penalty rises, weak coefficients are driven to zero one at a time; a level's survival point is the largest penalty at which its coefficient is still non-zero. A level shrunk to zero early carries no choice-discriminating signal beyond the rest of the profile.
+The **λ-survival path** orders the levels. As the penalty rises, weak coefficients are driven to zero one at a time; a level's survival point is the largest penalty at which its coefficient is still non-zero. A level shrunk to zero early carries no choice-discriminating signal.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -52,9 +52,9 @@ The **CRT p-value** turns the path into a test. The conditional randomization te
   </div>
 </div>
 
-The marginal mean and the attendance verdict answer different questions. The marginal mean is an average chosen-rate; the test asks whether the level carries signal once the rest of the profile and respondent heterogeneity are accounted for. The figure places the two side by side for all 50 levels of the Hainmueller and Hopkins (2015) immigration conjoint, and they part for several levels: a level near the 0.5 indifference line can still be attended, and a level away from it can fail the test.
+The marginal mean and the attendance verdict answer different questions. The marginal mean is an average marginal effect on the probability of being chosen; the crt test asks whether the level carries signal once the rest of the profile and respondent heterogeneity are accounted for. The figure places the two side by side for all 50 levels of the Hainmueller and Hopkins (2015) immigration conjoint, and they part for several levels: a level near the 0.5 indifference line can still be attended, and a level away from it can fail the test.
 
-## A model-free cross-check: the random forest
+## A cross-check: the random forest
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -62,7 +62,8 @@ The marginal mean and the attendance verdict answer different questions. The mar
   </div>
 </div>
 
-The `forest` method ranks levels by Mean Decrease in Accuracy (MDA): how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses. MDA is noisier near the bottom of the ranking than the lasso's zero / non-zero readout, so cjdiag treats the CRT test as the attendance verdict and the forest as a robustness check. Where the two agree, the reading does not depend on the learner.
+The `forest` method ranks levels by Mean Decrease in Accuracy (MDA). It asks how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses. 
+
 
 ## A readable single-sample view: the decision tree
 
@@ -100,4 +101,4 @@ pak::pak("dkarpa/cjdiag")
 
 ## Funding
 
-Development of `cjdiag` is supported by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme, project AGAPP "Algorithmic Governance — A Public Perspective" (ERC Starting Grant, grant agreement No. 101116772, PI: Prof. Daria Gritsenko).
+Development of `cjdiag` is supported by the European Research Council (ERC) under the European Union's Horizon Europe research and innovation programme, project AGAPP "Algorithmic Governance — A Public Perspective" (ERC Starting Grant, grant agreement No. 101116772).
