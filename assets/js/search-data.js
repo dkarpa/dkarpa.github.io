@@ -44,7 +44,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "post-a-formal-test-for-attribute-attendance-in-conjoint-experiments",
+        },{id: "post-the-pope-on-the-power-of-ideas",
+        
+          title: "The Pope on the Power of Ideas",
+        
+        description: "Pope Leo XIV&#39;s new encyclical letter is a phenomenal text.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/pope-power-of-ideas/";
+          
+        },
+      },{id: "post-a-formal-test-for-attribute-attendance-in-conjoint-experiments",
         
           title: "A Formal Test for Attribute Attendance in Conjoint Experiments",
         
