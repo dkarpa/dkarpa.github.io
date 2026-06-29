@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-06-17'
+  last_updated: '2026-06-29'
 papers:
   G24AjDUAAAAJ:8k81kl-MbHgC:
-    citations: 1
+    citations: 0
     title: 'Digital Surveillance and Self-Censorship in Autocracies: Evidence from a Survey Experiment in Kazakhstan'
     year: '2026'
   G24AjDUAAAAJ:9yKSN-GCB0IC:
@@ -25,12 +25,16 @@ papers:
     citations: 1
     title: Language Affinity, Russian Media and Sanctions Evasion
     year: '2025'
+  G24AjDUAAAAJ:j3f4tGmQtD8C:
+    citations: 0
+    title: Authority endorsements backfire and social norms fail to increase vaccination intent in post-COVID Kazakhstan
+    year: '2026'
   G24AjDUAAAAJ:qUcmZB5y_30C:
     citations: 0
     title: Surveillance and Public Support for Digital Governance Solutions
     year: '2024'
   G24AjDUAAAAJ:qjMakFHDy7sC:
-    citations: 18
+    citations: 19
     title: Authoritarian surveillance and public support for digital governance solutions
     year: '2025'
   G24AjDUAAAAJ:u-x6o8ySG0sC:
