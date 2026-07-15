@@ -1,12 +1,12 @@
 metadata:
-  last_updated: '2026-06-29'
+  last_updated: '2026-07-15'
 papers:
   G24AjDUAAAAJ:8k81kl-MbHgC:
-    citations: 0
-    title: 'Digital Surveillance and Self-Censorship in Autocracies: Evidence from a Survey Experiment in Kazakhstan'
+    citations: 1
+    title: 'Digital surveillance and self-censorship in autocracies: Evidence from a survey experiment in Kazakhstan'
     year: '2026'
   G24AjDUAAAAJ:9yKSN-GCB0IC:
-    citations: 41
+    citations: 40
     title: A transparency checklist for carbon footprint calculations applied within a systematic review of virtual care interventions
     year: '2022'
   G24AjDUAAAAJ:IjCSPb-OGe4C:
@@ -25,6 +25,10 @@ papers:
     citations: 1
     title: Language Affinity, Russian Media and Sanctions Evasion
     year: '2025'
+  G24AjDUAAAAJ:iH-uZ7U-co4C:
+    citations: 0
+    title: SSM-Population Health
+    year: Unknown Year
   G24AjDUAAAAJ:j3f4tGmQtD8C:
     citations: 0
     title: Authority endorsements backfire and social norms fail to increase vaccination intent in post-COVID Kazakhstan
