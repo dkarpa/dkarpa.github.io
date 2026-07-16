@@ -26,7 +26,7 @@ latest_posts:
 ---
 
 I'm David Karpa, a political economist studying citizen-state relations. My research focuses on how digitalisation and automation of modern states reshape public attitudes and political behavior.
-More specifically, my current research asks how people make sense of automation in public administration,
+More specifically, I currently think about how people make sense of automation in public administration,
 and how economic inequality and insecurity contribute to processes of autocratisation.
 Across both lines of inquiry, I use mixed empirical methods to analyze how technological and economic change reshape the relationship between citizens and the state at the micro level.
 My work on <a href="https://journals.sagepub.com/doi/10.1177/00104140241290208">public support for surveillance</a> has been published in <em>Comparative Political Studies</em>.
