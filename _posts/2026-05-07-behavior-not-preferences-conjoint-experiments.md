@@ -72,7 +72,7 @@ Each row is one of the 50 attribute levels in the Hainmueller and Hopkins (2015)
 
 The survival path orders the levels but does not, by itself, say where to draw the line between attended and not. The conditional randomization test (CRT) of Ham, Imai, and Janson (2024) is what I build on in order to get exactly that.
 
-For a level $\ell$, the CRT asks whether $\ell$ contributes to choice in the population through any channel: a main effect, an interaction, or heterogeneity across respondents. It compares the HierNet test statistic computed on the observed data to the distribution of that statistic under $B$ resamples of $\ell$'s column, each drawn from the design's known randomisation while the rest of the profile is held fixed. Because a conjoint design fixes the distribution the levels were drawn from, those resamples are exact, and the resulting p-value is valid in finite samples, with no appeal to asymptotics and no assumption that the HierNet model is correctly specified. In other words, in a conjoint, the researcher randomized X. They know its distribution exactly. Under the null "X doesn't matter," they could  replace each respondent's actual X values with fresh draws from the same randomization scheme, and the outcomes Y should look statistically the same. If the real data look weirder than the shuffles, the treatment mattered.
+For a level $\ell$, the CRT asks whether $\ell$ contributes to choice in the population through any channel: a main effect, an interaction, or heterogeneity across respondents. It compares the HierNet test statistic computed on the observed data to the distribution of that statistic under $B$ resamples of $\ell$'s column, each drawn from the design's known randomisation while the rest of the profile is held fixed. Because a conjoint design fixes the distribution the levels were drawn from, those resamples are exact, and the resulting p-value is valid in finite samples, with no appeal to asymptotics and no assumption that the HierNet model is correctly specified. In other words, in a conjoint, the researcher randomized X. They know its distribution exactly. Under the null "X doesn't matter," they could replace each respondent's actual X values with fresh draws from the same randomization scheme, and the outcomes Y should look statistically the same. If the real data look weirder than the shuffles, the treatment mattered.
 
 The test statistic is computed at a single $\lambda$ fixed in advance by sparse-recovery theory, $\lambda = \sqrt{N \log p}$, with $N$ the number of choice tasks and $p$ the number of free coefficients. The value of $\lambda$ affects only the power of the test; the p-value stays valid for any choice of it. A level is declared attended when its p-value falls below 0.05.
 
@@ -97,7 +97,6 @@ The penalised path is one estimator. `cjdiag` also fits a random forest as a sec
     {% include figure.liquid path="assets/img/cjdiag_rank.png" title="Random-forest level importance (MDA), Hainmueller and Hopkins (2015) immigration conjoint" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
-
 
 ## A readable single-sample view: the decision tree
 

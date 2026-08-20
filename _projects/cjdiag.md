@@ -12,7 +12,7 @@ related_publications: false
 
 Standard conjoint analysis tools (`cjoint`, `cregg`) estimate Average Marginal Component Effects (AMCEs), the causal effect of changing a single attribute level. The AMCE is identified by the design's randomisation and, as Hainmueller, Hopkins, and Yamamoto (2014) note, rests on no behavioral assumption. It answers a clear question: on average, how much does flipping a level shift the probability of being chosen?
 
-It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and were close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases. In cases where there is strong hetereogeneity, an AMCE might also look very small or non-existent. Consider questions where young and old respondents disagree. 
+It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and were close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases. In cases where there is strong hetereogeneity, an AMCE might also look very small or non-existent. Consider questions where young and old respondents disagree.
 
 **cjdiag** adds a quantity that separates them: Average Effective Attendance (AEA), a between-subject test of whether an attribute level carries population-level signal in the choice data. The output is a p-value per level (see crt section below). cjdiag is a complement to `cjoint` and `cregg`, not a replacement: run those for AMCEs and marginal means, then run cjdiag for effective attendance on the same data.
 
@@ -62,8 +62,7 @@ The marginal mean and the attendance verdict answer different questions. The mar
   </div>
 </div>
 
-The `forest` method ranks levels by Mean Decrease in Accuracy (MDA). It asks how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses. 
-
+The `forest` method ranks levels by Mean Decrease in Accuracy (MDA). It asks how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses.
 
 ## A readable single-sample view: the decision tree
 
