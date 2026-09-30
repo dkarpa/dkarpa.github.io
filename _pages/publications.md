@@ -32,6 +32,7 @@ nav_order: 2
 <ul>
   <li>“Sorry, None of Our Business: Economic Grievance, Zero-Sum Thinking, and Support for Defending Ukraine” (with Lasha Chargaziia and Michael Rochlitz)</li>
   <li>“Deprivation, Public Discontent and Support for Authoritarian Policies” (with Michael Rochlitz)</li>
+  <li>“‘I Am Not an Activist’: The Digital Authoritarian Bargain in Kazakhstan” (with Michael Rochlitz)</li>
   <li>“Public Opinion in Wartime Russia: Internet Restrictions, Repression, and Support for the War” (with Andrey Tkachenko, Lasha Chargaziia and Timothy M. Frye)</li>
   <li>“Legitimacy of Electronic Travel Authorisation in the United Kingdom” (with Daria Gritsenko)</li>
   <li>“How Ends Motivate Means: Unpacking How Motivated Reasoning Shapes Legitimacy Judgments of Automated Travel Authorisation Systems” (with Daria Gritsenko)</li>
