@@ -36,6 +36,7 @@ nav_order: 2
   <li>“Public Opinion in Wartime Russia: Internet Restrictions, Repression, and Support for the War” (with Andrey Tkachenko, Lasha Chargaziia and Timothy M. Frye)</li>
   <li>“Legitimacy of Electronic Travel Authorisation in the United Kingdom” (with Daria Gritsenko)</li>
   <li>“How Ends Motivate Means: Unpacking How Motivated Reasoning Shapes Legitimacy Judgments of Automated Travel Authorisation Systems” (with Daria Gritsenko)</li>
+  <li>“Studying Decision Processes in Conjoint Experiments with Eye-Tracking” (with Süleyman Özdel, Daria Gritsenko and Enkelejda Kasneci)</li>
 </ul>
 
 </div>
