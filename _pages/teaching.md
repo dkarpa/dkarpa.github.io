@@ -19,6 +19,32 @@ nav_order: 6
   </thead>
   <tbody>
 
+    <!-- 2026/27 -->
+    <tr>
+      <td><strong>2026/27</strong></td>
+      <td>Politics of Big Data and Digitalization</td>
+      <td>Graduate Seminar</td>
+      <td>Technical University of Munich</td>
+      <td>Munich, Germany</td>
+    </tr>
+
+    <tr>
+      <td><strong>2026/27</strong></td>
+      <td>Introduction to Data &amp; Society</td>
+      <td>Graduate Seminar</td>
+      <td>Technical University of Munich</td>
+      <td>Munich, Germany</td>
+    </tr>
+
+    <!-- 2026 -->
+    <tr>
+      <td><strong>2026</strong></td>
+      <td>Public Opinion Research Methods</td>
+      <td>Graduate Seminar</td>
+      <td>Technical University of Munich</td>
+      <td>Munich, Germany</td>
+    </tr>
+
     <!-- 2025 -->
     <tr>
       <td><strong>2025</strong></td>
