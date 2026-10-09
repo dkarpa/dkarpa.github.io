@@ -1,0 +1,5 @@
+# Citations to add on top of the Google Scholar count, keyed by Scholar pub_id.
+# Applied by bin/update_scholar_citations.py after every fetch.
+G24AjDUAAAAJ:bEWYMUwI8FkC:
+  extra_citations: 1
+  reason: "Carries over the citation of the previous version (G24AjDUAAAAJ:_FxGoFyzp5QC, 'Language Affinity, Russian Media and Sanctions Evasion')"
