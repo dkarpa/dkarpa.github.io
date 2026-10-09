@@ -108,6 +108,19 @@ def get_scholar_citations() -> None:
                 f"Error processing publication '{pub.get('bib', {}).get('title', 'Unknown')}': {e}. This publication will be skipped."
             )
 
+    # Apply manual citation offsets (e.g. carrying over citations of a superseded version)
+    overrides_file = "_data/citation_overrides.yml"
+    if os.path.exists(overrides_file):
+        with open(overrides_file, "r") as f:
+            overrides = yaml.safe_load(f) or {}
+        for key, override in overrides.items():
+            pub_id = key.split(":", 1)[-1]
+            for paper_key in (key, pub_id):
+                if paper_key in citation_data["papers"]:
+                    citation_data["papers"][paper_key]["citations"] += override.get("extra_citations", 0)
+                    print(f"Applied override to {paper_key}: +{override.get('extra_citations', 0)}")
+                    break
+
     # Compare new data with existing data
     if existing_data and existing_data.get("papers") == citation_data["papers"]:
         print("No changes in citation data. Skipping file update.")
