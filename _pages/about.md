@@ -51,10 +51,8 @@ In 2023, I was a visiting researcher at the
 </p>
 
 <p>
-I teach courses in political science and institutional economics,
+<a href="/teaching/">I teach courses</a> in political science and institutional economics,
 with a focus on technological development, as well as applied methods classes in R.
-You can learn more about my <a href="/projects/">current research projects</a>
-and <a href="/teaching/">teaching experience</a> on my website.
 </p>
 
 <p>
