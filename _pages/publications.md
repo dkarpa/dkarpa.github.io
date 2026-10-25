@@ -38,6 +38,7 @@ nav_order: 2
   <li>“Legitimacy of Electronic Travel Authorisation in the United Kingdom” (with Daria Gritsenko)</li>
   <li>“How Ends Motivate Means: Unpacking How Motivated Reasoning Shapes Legitimacy Judgments of Automated Travel Authorisation Systems” (with Daria Gritsenko)</li>
   <li>“Eye-Tracking Conjoint Experiments: Attention, Attribute Non-Attendance, and Decision Rules” (with Süleyman Özdel, Daria Gritsenko and Enkelejda Kasneci)</li>
+  <li>“Public Support for Internal Schengen Controls in German Border Regions” (with Lucas Schramm and Tehseen Jäger)</li>
 </ul>
 
 </div>
