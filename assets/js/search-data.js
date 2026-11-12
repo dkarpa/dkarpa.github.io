@@ -30,13 +30,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/software/";
           },
-        },{id: "nav-cv",
-          title: "CV",
-          description: "Click the PDF button to download my full academic CV.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Below is a selection of courses I have taught at different universities and programs.",
@@ -119,7 +112,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/Karpa_CV_Oct25.pdf", "_blank");
+          window.open("/assets/pdf/Karpa_CV_Nov_26.pdf", "_blank");
         },
       },{
         id: 'social-email',
