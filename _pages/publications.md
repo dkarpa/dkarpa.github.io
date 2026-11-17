@@ -31,7 +31,6 @@ nav_order: 2
 
 <ul>
   <li>“Is Algorithm Aversion a Rule or a Weight? Decision Strategies and Reasons Elicited by a Large Language Model” (with Vaibhav Agarwal, Krista Lagus, Kimmo Vehkalahti and Daria Gritsenko). Stage 1 Registered Report [<a href="https://github.com/dkarpa/lata-registered-report">materials</a>] [<a href="https://doi.org/10.5281/zenodo.23362235">Zenodo</a>]</li>
-  <li>“‘Sorry, None of Our Business’: Opportunity Costs and Support for Defending Ukraine” (with Lasha Chargaziia and Michael Rochlitz)</li>
   <li>“Deprivation, Public Discontent and Support for Authoritarian Policies” (with Michael Rochlitz) [<a href="/assets/pdf/Karpa_Rochlitz_Deprivation_slides.pdf">slides</a>]</li>
   <li>“‘I Am Not an Activist’: The Digital Authoritarian Bargain in Kazakhstan” (with Michael Rochlitz) [<a href="/assets/pdf/Karpa_Rochlitz_Not_an_Activist_slides.pdf">slides</a>]</li>
   <li>“Public Opinion in Wartime Russia: Internet Restrictions, Repression, and Support for the War” (with Andrey Tkachenko, Lasha Chargaziia and Timothy M. Frye)</li>
