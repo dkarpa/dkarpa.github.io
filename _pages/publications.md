@@ -35,7 +35,6 @@ nav_order: 2
   <li>“‘I Am Not an Activist’: The Digital Authoritarian Bargain in Kazakhstan” (with Michael Rochlitz) [<a href="/assets/pdf/Karpa_Rochlitz_Not_an_Activist_slides.pdf">slides</a>]</li>
   <li>“Public Opinion in Wartime Russia: Internet Restrictions, Repression, and Support for the War” (with Andrey Tkachenko, Lasha Chargaziia and Timothy M. Frye)</li>
   <li>“Legitimacy of Electronic Travel Authorisation in the United Kingdom” (with Daria Gritsenko)</li>
-  <li>“How Ends Motivate Means: Unpacking How Motivated Reasoning Shapes Legitimacy Judgments of Automated Travel Authorisation Systems” (with Daria Gritsenko)</li>
   <li>“Eye-Tracking Conjoint Experiments: Attention, Attribute Non-Attendance, and Decision Rules” (with Süleyman Özdel, Daria Gritsenko and Enkelejda Kasneci)</li>
   <li>“Public Support for Internal Schengen Controls in German Border Regions” (with Lucas Schramm and Tehseen Jäger)</li>
 </ul>
