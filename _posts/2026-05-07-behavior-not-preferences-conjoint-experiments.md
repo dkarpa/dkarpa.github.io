@@ -3,7 +3,7 @@ layout: post
 title: "A Formal Test for Attribute Attendance in Conjoint Experiments"
 author: David Karpa
 date: 2026-05-07 06:00:00
-description: cjdiag adds a between-subject test for attribute attendance for standard conjoint experiment, with a p-value per level, validated against eye-tracking.
+description: cjdiag adds a between-subject test for attribute attendance in standard conjoint experiments, with a p-value per level, validated against eye-tracking.
 tags: research methods conjoint attendance cjdiag ana
 categories: research
 thumbnail: assets/img/cjdiag_crt_pval.png
@@ -12,31 +12,31 @@ related_posts: false
 published: true
 ---
 
-Conjoint experiments randomise multi-attribute profiles and ask respondents to choose between them. The standard output is the average marginal component effect (AMCE), the average change in chosen-rate when one attribute level is flipped. The AMCE is identified by the design's randomisation, and Hainmueller, Hopkins, and Yamamoto (2014) are explicit that it rests on no behavioral assumption. It is the right quantity for the question it answers.
+Conjoint experiments randomise multi-attribute profiles and ask respondents to choose between them. The standard output is the average marginal component effect (AMCE), the average change in chosen-rate when one attribute level is flipped. Because the design's randomisation identifies the AMCE, it needs no model of how respondents choose, as Hainmueller, Hopkins, and Yamamoto (2014) stress. It is the right quantity for the question it answers.
 
-It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and landed close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases and does not separate them. `cjdiag` adds a quantity that does: a between-subject test of whether an attribute level carries any (direct or interaction) population-level signal in the choice data, i.e., whether respondents on average attended to it. The output is a p-value per level, computed from the same choice data and the design. This post walks through that test and the package around it.
+It does not answer a second question that often comes up in interpretation: did respondents attend to a given attribute at all? A level can carry a small AMCE because respondents weighed it and landed close to indifferent, or because a share of respondents never engaged with it. The AMCE averages over both cases and does not separate them. The R package `cjdiag` adds a test aimed at this second question. It is a between-subject test of whether an attribute level carries any population-level signal in the choice data, direct or through interactions, i.e., whether respondents on average attended to it. The output is a p-value per level, computed from the same choice data and the design. This post walks through that test and the package around it.
 
 ## Why attendance is worth testing
 
-People simplify multi-attribute choices. Since Simon (1955), a long line of work has found that decision-makers under cognitive or time constraints do not take every attribute of every option into consideration. Think of the snack shelf at a kiosk: you are mildly hungry, don't want to overspend, allergic to peanuts. You do not score each item out of ten. You drop anything with peanuts, drop anything over a price you have in mind, and pick from what is left. Some attributes settle the choice; others never get used.
+People simplify multi-attribute choices. Since Simon (1955), a long line of work has found that decision-makers under cognitive or time constraints do not take every attribute of every option into consideration. Think of the snack shelf at a kiosk: you are mildly hungry, do not want to overspend and are allergic to peanuts. You do not score each item out of ten. You drop anything with peanuts, drop anything over a price you have in mind, and pick from what is left. Some attributes settle the choice; others never get used.
 
-Conjoint profiles are multi-attribute choices made quickly, so the same simplification is plausible there, and eye-tracking shows it directly. Jenke et al. (2021) tracked 122 respondents on an 11-attribute candidate conjoint and found they fixated between 45 to 71 percent of the attribute cells, with coverage tilted toward the more predictive attributes. Bansak and Jenke (2025) report that respondents process attributes largely one at a time rather than evaluating profiles as a whole. Essentially, respondents go through attributes comparing levels and stopping whenever enough information is gathered.
+Conjoint tasks are multi-attribute choices made quickly, so the same simplification is plausible there, which eye-tracking shows directly. Jenke et al. (2021) tracked 122 respondents on an 11-attribute candidate conjoint and found they fixated between 45 and 71 percent of the attribute cells, with coverage tilted toward the more predictive attributes. Bansak and Jenke (2025) report that respondents process attributes largely one at a time rather than evaluating profiles as a whole. Respondents go through the attributes, compare levels and stop once they have enough information.
 
-The term for an attribute receiving no decision weight is attribute non-attendance (ANA), i.e., a respondent placing no weight on it. ANA has a history in both marketing and transport studies (Hess et al. 2013; Yegoryan, Guhl, and Klapper 2020; Yegoryan, Guhl, and Paetz 2023). I build on this literature and introduce a new estimand for conjoint experiments.
+The term for a respondent placing no decision weight on an attribute is attribute non-attendance (ANA). ANA has a history in both marketing and transport research (Hess et al. 2013; Yegoryan, Guhl, and Klapper 2020; Yegoryan, Guhl, and Paetz 2023). I build on this literature and introduce a new estimand for conjoint experiments.
 
 ## Average Effective Attendance
 
-`cjdiag` estimates Average Effective Attendance (AEA). AEA is the average, across respondents, of how much each respondent's choice depends on a given attribute level. Each respondent contributes a reading on the unit interval; AEA is the population mean of that reading, the same averaging convention the AMCE uses (the _average_ marginal component effect).
+`cjdiag` estimates Average Effective Attendance (AEA), the average across respondents of how much each respondent's choice depends on a given attribute level. Each respondent contributes a reading on the unit interval and AEA is the population mean of that reading, the same averaging convention the AMCE uses (the _average_ marginal component effect).
 
-The name states what it is. _Average_: a mean over respondents. _Effective_: the levels effectively attended, a set that for some respondents may be small. _Attendance_: whether the respondent placed any decision weight on the level.
+The name states what it is. _Average_ refers to the mean over respondents, _effective_ to the levels a respondent effectively attended (a set that may be small for some respondents) and _attendance_ to whether the respondent placed any decision weight on the level.
 
-AEA is descriptive, population-level, and identified from choice data plus the design's randomisation. It sits alongside the AMCE rather than replacing it. It is not a decision-rule model, and it is not a per-respondent attendance estimate.
+AEA is a descriptive, population-level quantity, identified from choice data plus the design's randomisation. It complements the AMCE and is neither a decision-rule model nor a per-respondent attendance estimate.
 
 ## Why a between-subject estimator
 
-Attendance is not a new target. Latent-class attendance models recover attention, but they do it within-subject: they estimate respondent-specific weights, which needs many tasks per respondent, typically twenty or more.
+Existing attendance models work within-subject and need many tasks per respondent. Latent-class attendance models recover attendance by estimating respondent-specific weights, which typically takes twenty or more tasks.
 
-That requirement carries a cost. Long task batteries change how respondents decide. Fixation coverage drops over the course of a session, and satisficing rises with task load. What a within-subject estimator picks up on a twenty-task battery is plausibly the non-attendance that the battery itself induced, not the attendance that operates in a conjoint of ordinary length. Most published conjoints run three to eight tasks, and the within-subject machinery does not apply to them.
+That requirement carries a cost because long task batteries change how respondents decide. Fixation coverage drops over the course of a session and satisficing rises with task load. A within-subject estimator run on a twenty-task battery therefore plausibly picks up the non-attendance that the battery itself induced, not the attendance that operates in a conjoint of ordinary length. Most published conjoints run three to eight tasks, too few for the within-subject machinery.
 
 AEA is estimated between-subject. It reads attendance off variation in choices across respondents combined with the design's randomisation, so it works at any task count, including the shorter conjoints that make up most of the published record.
 
@@ -48,7 +48,7 @@ $$
 \hat\beta(\lambda) = \arg\min_\beta \Big\{ -\ell(\beta;\, Y, X) + \lambda \sum_j |\beta_j| \Big\}.
 $$
 
-The penalty $\lambda$ taxes the size of the coefficients. At $\lambda = 0$ every level's coefficient is estimated freely. As $\lambda$ rises, weak coefficients are driven to exactly zero, one at a time, until at a large enough $\lambda$ only the levels with the strongest choice signal remain. Each level therefore has a lifetime on the path: a range of $\lambda$ over which its coefficient stays non-zero. HierNet's hierarchy constraint, that an interaction term may enter only if both of its main effects do, means the same fit can register a level that matters through an interaction, not only one that matters on its own.
+The penalty $\lambda$ taxes the size of the coefficients. At $\lambda = 0$ every level's coefficient is estimated freely. As $\lambda$ rises, weak coefficients are driven to exactly zero, one at a time, until at a large enough $\lambda$ only the levels with the strongest choice signal remain. Each level therefore has a lifetime on the path, the range of $\lambda$ over which its coefficient stays non-zero. HierNet's hierarchy constraint, that an interaction term may enter only if both of its main effects do, means the same fit can also register a level that matters only through an interaction.
 
 ### λ-survival, a continuous ranking
 
@@ -66,17 +66,17 @@ the largest penalty at which $\ell$ still has a non-zero coefficient. Normalised
   </div>
 </div>
 
-Each row is one of the 50 attribute levels in the Hainmueller and Hopkins (2015) immigration conjoint. Blue marks the values of $\lambda$ at which the level keeps a non-zero coefficient; grey marks where it has been shrunk to zero. "No plans to look for work" holds its coefficient across the full grid. The levels at the bottom drop out almost at once, which is the choice-data signature of non-attendance, or of a preference too small for the data to resolve. The two are the same here: either way the level is not moving choices.
+Each row is one of the 50 attribute levels in the Hainmueller and Hopkins (2015) immigration conjoint. Dark cells mark the values of $\lambda$ at which the level keeps a non-zero coefficient; light cells mark where it has been shrunk to zero. "No plans to look for work" holds its coefficient across the full grid. The levels at the bottom drop out almost at once, which is the choice-data signature of non-attendance, or of a preference too small for the data to resolve. The choice data cannot tell the two apart, since in both cases the level does not move choices.
 
 ### The CRT p-value, a formal test
 
-The survival path orders the levels but does not, by itself, say where to draw the line between attended and not. The conditional randomization test (CRT) of Ham, Imai, and Janson (2024) is what I build on in order to get exactly that.
+The survival path orders the levels but does not, by itself, say where to draw the line between attended and not. For that line I build on the conditional randomization test (CRT) of Ham, Imai, and Janson (2024).
 
-For a level $\ell$, the CRT asks whether $\ell$ contributes to choice in the population through any channel: a main effect, an interaction, or heterogeneity across respondents. It compares the HierNet test statistic computed on the observed data to the distribution of that statistic under $B$ resamples of $\ell$'s column, each drawn from the design's known randomisation while the rest of the profile is held fixed. Because a conjoint design fixes the distribution the levels were drawn from, those resamples are exact, and the resulting p-value is valid in finite samples, with no appeal to asymptotics and no assumption that the HierNet model is correctly specified. In other words, in a conjoint, the researcher randomized X. They know its distribution exactly. Under the null "X doesn't matter," they could replace each respondent's actual X values with fresh draws from the same randomization scheme, and the outcomes Y should look statistically the same. If the real data look weirder than the shuffles, the treatment mattered.
+For a level $\ell$, the CRT asks whether $\ell$ contributes to choice in the population through any channel: a main effect, an interaction, or heterogeneity across respondents. It compares the HierNet test statistic computed on the observed data to the distribution of that statistic under $B$ resamples of $\ell$'s column, each drawn from the design's known randomisation while the rest of the profile is held fixed. Because a conjoint design fixes the distribution the levels were drawn from, those resamples are exact, which makes the resulting p-value valid in finite samples, with no appeal to asymptotics and no assumption that the HierNet model is correctly specified. In other words, the researcher randomised the levels and therefore knows their distribution exactly. Under the null that $\ell$ does not matter, they could replace each profile's observed value of $\ell$ with a fresh draw from the same randomisation scheme and the choices $Y$ should look statistically the same. If the real data look weirder than the resamples, the level mattered.
 
-The test statistic is computed at a single $\lambda$ fixed in advance by sparse-recovery theory, $\lambda = \sqrt{N \log p}$, with $N$ the number of choice tasks and $p$ the number of free coefficients. The value of $\lambda$ affects only the power of the test; the p-value stays valid for any choice of it. A level is declared attended when its p-value falls below 0.05.
+The test statistic is computed at a single $\lambda$ fixed in advance by sparse-recovery theory, $\lambda = \sqrt{N \log p}$, with $N$ the number of choice tasks and $p$ the number of free coefficients. The value of $\lambda$ affects only the power of the test; the p-value stays valid for any choice of it. A level is declared attended when its p-value falls below 0.05. The p-values shown here come from `CRTConjoint::CRT_pval()`, the implementation of Ham, Imai, and Janson, run once per level with $B = 200$; `cj_fit(method = "crt")` returns the survival path.
 
-This is the practical core of the package. For each attribute level in a conjoint of ordinary length, you get a hypothesis test with an interpretable p-value, computed from the choice data and the design alone. Researchers do not need to increase tasks or alter design features. This is great because we can still estimate AMCEs and marginal means, compare our new study to previous ones (same design) and get new insights for interpreting our data. Or we can run this on previously published data:
+For each attribute level in a conjoint of ordinary length, the result is a hypothesis test with an interpretable p-value, computed from the choice data and the design alone. You need neither more tasks nor a different design, so you can still estimate AMCEs and marginal means, compare a new study with earlier ones that used the same design, and read both next to the attendance verdict. The test also runs on previously published data:
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
@@ -84,19 +84,21 @@ This is the practical core of the package. For each attribute level in a conjoin
   </div>
 </div>
 
-The figure places the CRT verdict next to the marginal mean for all 50 levels. Each point and interval is a level's marginal mean, the raw chosen-rate of profiles carrying it, with a 95 percent interval; the colour marks whether the CRT flags the level as attended (here 36 of 50). The vertical line at 0.5 is indifference.
+The figure places the CRT verdict next to the marginal mean for all 50 levels. Each point and interval is a level's marginal mean, the raw chosen-rate of profiles carrying it, with a 95 percent interval; black marks the levels the CRT flags as attended (36 of 50) and grey the rest. The vertical line at 0.5 is indifference.
 
-The marginal mean and the attendance verdict answer different questions, and the figure shows where they part. A level can sit close to 0.5 and still be attended, if it pushes choice in opposite directions across subgroups so the average washes out. A level can sit away from 0.5 and fail the test, if its deviation is small relative to sampling noise (there are others reasons and a paper is on its way!). Reading one off the other would mislabel both kinds of level.
+The marginal mean and the attendance verdict answer different questions and the figure shows where they part. A level can sit close to 0.5 and still be attended if it pushes choice in opposite directions across subgroups so that the average washes out. Sudan as country of origin, for example, has a marginal mean of 0.48 with an interval that covers 0.5 and still passes the test. A level can also sit away from 0.5 and fail the test if its deviation is small relative to sampling noise (there are other reasons and a paper is on its way!). Financial analyst sits at 0.57 and is not flagged. Reading one off the other would mislabel both kinds of level.
 
-## A model-free cross-check: the random forest
+## A non-parametric cross-check: the random forest
 
-The penalised path is one estimator. `cjdiag` also fits a random forest as a second, non-parametric opinion on the same data. The forest ranks levels by Mean Decrease in Accuracy (MDA), i.e., how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses.
+Besides the penalised path, `cjdiag` fits a random forest as a second, non-parametric opinion on the same data. The forest ranks levels by Mean Decrease in Accuracy (MDA), i.e., how much the forest's out-of-sample predictions worsen when one level's values are randomly shuffled. A level with high MDA is one the forest leans on; a level near zero is one it barely uses.
 
 <div class="row justify-content-sm-center">
   <div class="col-sm-12 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/cjdiag_rank.png" title="Random-forest level importance (MDA), Hainmueller and Hopkins (2015) immigration conjoint" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
+
+The figure shows the 20 levels with the highest MDA. The forest's five highest-ranked levels are also the five that survive longest on the penalised path, and across all 50 levels the two rankings correlate at 0.64 (Spearman).
 
 ## A readable single-sample view: the decision tree
 
@@ -108,25 +110,25 @@ A single decision tree fit to the same data puts the structure in one picture.
   </div>
 </div>
 
-The root split is "no plans to look for work": profiles carrying that level have an average chosen-rate of 0.35, and the branch ends there. Among the profiles that clear it, the next split is prior unauthorized entry, which drops the chosen-rate from 0.58 to 0.42; profiles past that are split on education. Softer attributes such as language ability appear only deeper, inside specific branches. Country of origin, gender, profession, application reason, and job experience do not enter the tree at all. The design varied them, but in this dataset they did not carry enough signal to be selected as a split.
+The root split is "no plans to look for work". Profiles carrying that level have an average chosen-rate of 0.34 and the branch ends there. Among the profiles that clear it, the next split is prior unauthorised entry, which drops the chosen-rate from 0.59 to 0.42. Profiles past that are split on fluent English (0.67 with it, 0.56 without). Education, country of origin, gender, profession, application reason, and job experience do not enter the tree at all. The design varied them, but at the default complexity setting none of them carried enough signal to be selected as a split.
 
-A single tree overfits its sample, so it is the readable summary rather than the estimate; the forest and the CRT path carry the numbers. The three views agree on the broad picture here, which is the reassuring case.
+A single tree is a coarse summary of its sample, so it is the readable picture rather than the estimate; the forest and the survival path carry the numbers. The three views agree on the broad picture here, since the tree's three splits are among the four levels that the forest and the survival path both rank highest.
 
 ## Five methods, one interface
 
 The package exposes five estimators through `cj_fit(formula, data, method)`:
 
-- `crt` — the CRT attendance test and λ-survival path described above (Ham, Imai, and Janson 2024). The lead estimator.
-- `forest` — random-forest level importance via Mean Decrease in Accuracy (Breiman 2001).
-- `tree` — a single decision tree showing the order in which levels split the data.
-- `nmm` — nested marginal means, the order in which levels separate choices under a nested aggregation (Dill, Howlett, and Müller-Crepon 2024).
-- `marginal_r2` — per-respondent $R^2$ from regressing choice on each attribute separately (Jenke et al. 2021).
+- `crt`: the λ-survival path described above, the basis of the CRT attendance test (Ham, Imai, and Janson 2024) and the lead estimator.
+- `forest`: random-forest level importance via Mean Decrease in Accuracy (Breiman 2001).
+- `tree`: a single decision tree showing the order in which levels split the data.
+- `nmm`: nested marginal means, the order in which levels separate choices under a nested aggregation (Dill, Howlett, and Müller-Crepon 2024).
+- `marginal_r2`: per-respondent $R^2$ from regressing choice on each attribute separately (Jenke et al. 2021).
 
-The CRT test is the one to report for an attendance verdict; the others read the same signal from different angles and serve as cross-checks.
+The CRT is the one to report for an attendance verdict; the others read the same signal from different angles and serve as cross-checks.
 
 ## Validation against eye-tracking
 
-I am currently writing a paper on this. But so far: The attendance verdict can be checked against where respondents actually look. On three eye-tracking conjoint datasets, Jenke et al. (2021) and the two scenarios in Bansak and Jenke (2025), the levels the CRT test flags as attended are, in rank, the levels respondents fixate most, with Spearman rank correlations between 0.22 and 0.33. The agreement is moderate and consistent across the three datasets. Eye-tracking measures where attention lands; the CRT test measures whether a level moved choices; the two are related but not identical, and a moderate correlation is about what one should expect. It is enough to support reading the test as an attendance diagnostic, and not so high as to suggest the two measure the same thing.
+The attendance verdict agrees moderately with where respondents actually look. A paper on this validation is in progress; so far, on three eye-tracking conjoint datasets (Jenke et al. 2021 and the two scenarios in Bansak and Jenke 2025), levels with smaller CRT p-values are fixated more, with Spearman rank correlations between 0.22 and 0.33. Eye-tracking measures where attention lands, whereas the CRT measures whether a level moved choices, so a moderate correlation is about what one should expect. It is enough to support reading the test as an attendance diagnostic and not so high as to suggest the two measure the same thing.
 
 ## Using it
 

@@ -72,7 +72,7 @@ The `forest` method ranks levels by Mean Decrease in Accuracy (MDA). It asks how
   </div>
 </div>
 
-The `tree` method fits a single decision tree, which puts the structure in one picture. On the immigration conjoint, the root split is "no plans to look for work"; profiles carrying that level have an average chosen-rate of 0.35. Further splits pick up prior unauthorized entry and education, while several attributes (country of origin, gender, profession, application reason, job experience) do not enter the tree at all. The design varied them, but in this dataset they did not carry enough signal to be selected as a split. A single tree overfits its sample, so it is the readable summary rather than the estimate; the forest and the CRT path carry the numbers.
+The `tree` method fits a single decision tree, which puts the structure in one picture. On the immigration conjoint, the root split is "no plans to look for work"; profiles carrying that level have an average chosen-rate of 0.34. Further splits pick up prior unauthorized entry and fluent English, while several attributes (education, country of origin, gender, profession, application reason, job experience) do not enter the tree at all. The design varied them, but in this dataset they did not carry enough signal to be selected as a split. A single tree overfits its sample, so it is the readable summary rather than the estimate; the forest and the CRT path carry the numbers.
 
 ## Installation
 
