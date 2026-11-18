@@ -52,7 +52,7 @@ ninja.data = [{
         
           title: "A Formal Test for Attribute Attendance in Conjoint Experiments",
         
-        description: "cjdiag adds a between-subject test for attribute attendance for standard conjoint experiment, with a p-value per level, validated against eye-tracking.",
+        description: "cjdiag adds a between-subject test for attribute attendance in standard conjoint experiments, with a p-value per level, validated against eye-tracking.",
         section: "Posts",
         handler: () => {
           
